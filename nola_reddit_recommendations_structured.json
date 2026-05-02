@@ -1,0 +1,2472 @@
+{
+  "metadata": {
+    "title": "New Orleans Reddit Recommendations - Structured Map Dataset",
+    "created": "2026-05-01",
+    "description": "Structured JSON converted from the compiled Markdown recommendations extracted from three r/AskNOLA Reddit JSON threads. Place-based entries are enriched with researched or best-effort addresses and coordinates for map use.",
+    "schema": {
+      "Name": "Recommendation name or normalized place/activity name",
+      "Address": "Street address when the recommendation maps to a specific place; null for routes, neighborhoods, or non-map tips",
+      "Alias": "Alternate names/spellings",
+      "Person": "People affiliated with the place, performance, or historical reference when mentioned or highly relevant",
+      "Category": "Human-readable category",
+      "Description": "Clean recommendation summary",
+      "Lat": "Latitude, decimal degrees, or null",
+      "Long": "Longitude, decimal degrees, or null",
+      "MapType": "place, neighborhood, street, route, activity, event_area, food_at_place, non_map_tip, etc.",
+      "GeoConfidence": "high, medium, approximate, low, n/a",
+      "Notes": "Caveats, freshness warnings, or source nuance",
+      "SourceThread": "Reddit JSON source thread URLs"
+    },
+    "source_threads": [
+      "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+      "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+      "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+    ],
+    "coordinate_caveat": "Coordinates are intended to drive initial map entries. High-confidence venue coordinates should still be verified against your production geocoder or source-of-truth places API before launch. Route, neighborhood, event, and generic activity coordinates are approximate anchors rather than exact destinations. A few business locations/statuses can change."
+  },
+  "items": [
+    {
+      "Name": "Audubon Aquarium",
+      "Address": "1 Canal St, New Orleans, LA 70130",
+      "Alias": [
+        "Audubon Aquarium of the Americas"
+      ],
+      "Person": [],
+      "Category": "Aquarium / Family Attraction",
+      "Description": "Visit the Audubon Aquarium as a tourist-friendly family attraction near the riverfront.",
+      "Lat": 29.9513,
+      "Long": -90.0633,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "New Orleans East",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Area / Questionable Recommendation",
+      "Description": "A commenter jokingly or sarcastically suggested walking through New Orleans East; replies treated it as questionable rather than a standard tourist recommendation.",
+      "Lat": 30.0328,
+      "Long": -89.974,
+      "MapType": "area",
+      "GeoConfidence": "low",
+      "Notes": "Included because it appeared in the source, but marked questionable.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "JAMNOLA",
+      "Address": "940 Frenchmen St, New Orleans, LA 70116",
+      "Alias": [
+        "Joy Art Music New Orleans"
+      ],
+      "Person": [],
+      "Category": "Art / Culture Attraction",
+      "Description": "Interactive cultural funhouse/photo-op experience created with local artists.",
+      "Lat": 29.9669,
+      "Long": -90.0548,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Sydney and Walda Besthoff Sculpture Garden",
+      "Address": "1 Collins Diboll Cir, New Orleans, LA 70124",
+      "Alias": [
+        "Besthoff Sculpture Garden",
+        "NOMA Sculpture Garden"
+      ],
+      "Person": [],
+      "Category": "Art / Outdoor",
+      "Description": "Visit the sculpture garden in City Park / NOMA as part of a park outing.",
+      "Lat": 29.9865,
+      "Long": -90.0934,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Crown & Anchor English Pub",
+      "Address": "200 Pelican Ave, New Orleans, LA 70114",
+      "Alias": [
+        "Crown & Anchor"
+      ],
+      "Person": [],
+      "Category": "Bar / Algiers",
+      "Description": "Have a pint after taking the ferry to Algiers Point, then return by ferry.",
+      "Lat": 29.9522,
+      "Long": -90.0516,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Old Point Bar",
+      "Address": "545 Patterson Rd, New Orleans, LA 70114",
+      "Alias": [
+        "The Old Point"
+      ],
+      "Person": [],
+      "Category": "Bar / Algiers",
+      "Description": "Have a drink in Algiers Point as part of the ferry outing.",
+      "Lat": 29.9505,
+      "Long": -90.0501,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Jean Lafitte’s Blacksmith Shop Bar",
+      "Address": "941 Bourbon St, New Orleans, LA 70116",
+      "Alias": [
+        "Jean Lafitte's Bar"
+      ],
+      "Person": [
+        "Jean Lafitte"
+      ],
+      "Category": "Bar / Haunted Atmosphere",
+      "Description": "Go for old-bar atmosphere and ghostly/lore vibes.",
+      "Lat": 29.961,
+      "Long": -90.0635,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Carousel Bar & Lounge",
+      "Address": "214 Royal St, New Orleans, LA 70130",
+      "Alias": [
+        "Carousel Bar at Hotel Monteleone"
+      ],
+      "Person": [],
+      "Category": "Bar / Hotel Bar",
+      "Description": "Visit the rotating Carousel Bar at Hotel Monteleone; fun but hard to get a seat.",
+      "Lat": 29.9544,
+      "Long": -90.0684,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "The Prytania Bar",
+      "Address": "3445 Prytania St, New Orleans, LA 70115",
+      "Alias": [
+        "Prytania Bar"
+      ],
+      "Person": [
+        "George Kilby Jr.",
+        "The Random Few"
+      ],
+      "Category": "Bar / Live Music",
+      "Description": "If Uptown on Monday evening, catch George Kilby Jr. & The Random Few, 7–10 PM, and consider eating there.",
+      "Lat": 29.9248,
+      "Long": -90.0955,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": "Performance schedule may change; verify before relying on it.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Saturn Bar",
+      "Address": "3067 St Claude Ave, New Orleans, LA 70117",
+      "Alias": [],
+      "Person": [
+        "King James and the Special Men",
+        "The Misfits"
+      ],
+      "Category": "Bar / Music Venue",
+      "Description": "Recommended for a specific Wednesday-night show by the band formerly known as King James and the Special Men, now called The Misfits; date-specific in original thread.",
+      "Lat": 29.9694,
+      "Long": -90.0366,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": "Music recommendation was date-specific to the original Reddit thread.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Buffa’s",
+      "Address": "1001 Esplanade Ave, New Orleans, LA 70116",
+      "Alias": [
+        "Buffa's Bar & Restaurant"
+      ],
+      "Person": [],
+      "Category": "Bar / Pub",
+      "Description": "Local pub and food spot recommended in the source thread.",
+      "Lat": 29.9635,
+      "Long": -90.0608,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Coop’s Place",
+      "Address": "1109 Decatur St, New Orleans, LA 70116",
+      "Alias": [
+        "Coop's"
+      ],
+      "Person": [],
+      "Category": "Bar / Restaurant",
+      "Description": "Mentioned as a spot for something stronger before wandering deeper into the Quarter.",
+      "Lat": 29.9603,
+      "Long": -90.0583,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Pat O’Brien’s",
+      "Address": "718 St Peter, New Orleans, LA 70116",
+      "Alias": [
+        "Pat O's",
+        "Pat O’Brien’s Piano Bar"
+      ],
+      "Person": [],
+      "Category": "Bar / Tourist Classic",
+      "Description": "Go for Hurricanes, the courtyard, and especially the piano bar / singalong tourist classic.",
+      "Lat": 29.9582,
+      "Long": -90.0648,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Creole Queen Historic Cruise",
+      "Address": "1 Poydras St, New Orleans, LA 70130",
+      "Alias": [
+        "Creole Queen",
+        "Paddlewheeler Creole Queen"
+      ],
+      "Person": [],
+      "Category": "Boat / History Cruise",
+      "Description": "Daytime historic cruise to Chalmette Battlefield; recommended over counting on riverboat dinner food.",
+      "Lat": 29.9488,
+      "Long": -90.0635,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Steamboat Natchez",
+      "Address": "400 Toulouse St, New Orleans, LA 70130",
+      "Alias": [
+        "Natchez steamboat",
+        "Steamboat Natchez"
+      ],
+      "Person": [],
+      "Category": "Boat / River Cruise",
+      "Description": "Ride the Natchez for river views, river activity, city views from the water, and Dixieland-style jazz.",
+      "Lat": 29.9547,
+      "Long": -90.0636,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Riverboat Sightseeing",
+      "Address": null,
+      "Alias": [
+        "River cruise"
+      ],
+      "Person": [],
+      "Category": "Boat / Sightseeing",
+      "Description": "Use riverboats for views, drinks, and sightseeing; do not rely on the dinner meal as the food highlight.",
+      "Lat": 29.9505,
+      "Long": -90.0634,
+      "MapType": "activity",
+      "GeoConfidence": "approximate",
+      "Notes": "Generic recommendation covering riverboat experiences.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Café Beignet Bourbon Street",
+      "Address": "311 Bourbon St, New Orleans, LA 70130",
+      "Alias": [
+        "Cafe Beignet",
+        "Café Beignet on Bourbon"
+      ],
+      "Person": [],
+      "Category": "Cafe / Beignets",
+      "Description": "Alternative beignet stop, especially if Café du Monde has a long line.",
+      "Lat": 29.9552,
+      "Long": -90.0686,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Café du Monde City Park",
+      "Address": "56 Dreyfous Dr, New Orleans, LA 70124",
+      "Alias": [
+        "Cafe Du Monde City Park"
+      ],
+      "Person": [],
+      "Category": "Cafe / Beignets",
+      "Description": "Repeatedly recommended Café du Monde location, quieter and paired with City Park.",
+      "Lat": 29.9856,
+      "Long": -90.0951,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Café du Monde French Market",
+      "Address": "800 Decatur St, New Orleans, LA 70116",
+      "Alias": [
+        "Cafe Du Monde",
+        "Café Du Monde"
+      ],
+      "Person": [],
+      "Category": "Cafe / Beignets",
+      "Description": "Classic coffee-and-beignet stop; go late night, early morning, or use the to-go window to avoid a long line.",
+      "Lat": 29.9576,
+      "Long": -90.0618,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Café du Monde Riverwalk",
+      "Address": "500 Port of New Orleans Pl, Suite 140, New Orleans, LA 70130",
+      "Alias": [
+        "Cafe Du Monde Riverwalk"
+      ],
+      "Person": [],
+      "Category": "Cafe / Beignets",
+      "Description": "Get beignets at the Riverwalk location and take them outside for the river view.",
+      "Lat": 29.948,
+      "Long": -90.0638,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Pagoda Café",
+      "Address": "1430 N Dorgenois St, New Orleans, LA 70119",
+      "Alias": [
+        "Pagoda Cafe"
+      ],
+      "Person": [],
+      "Category": "Cafe / Brunch Alternative",
+      "Description": "Brunch/coffee alternative recommended over tourist-trap breakfast spots.",
+      "Lat": 29.9745,
+      "Long": -90.0746,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Dat Dog Frenchmen",
+      "Address": "601 Frenchmen St, New Orleans, LA 70116",
+      "Alias": [
+        "Dat Dog"
+      ],
+      "Person": [],
+      "Category": "Casual Food / Late Night",
+      "Description": "Late-night snack after Frenchmen Street music.",
+      "Lat": 29.9649,
+      "Long": -90.0575,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Lafayette Cemetery No. 1",
+      "Address": "1427 Washington Ave, New Orleans, LA 70130",
+      "Alias": [
+        "Lafayette Cemetery"
+      ],
+      "Person": [],
+      "Category": "Cemetery / Architecture",
+      "Description": "Visit if open while exploring the Garden District; check access status before planning around it.",
+      "Lat": 29.9289,
+      "Long": -90.0843,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "St. Louis Cemetery No. 1",
+      "Address": "425 Basin St, New Orleans, LA 70112",
+      "Alias": [
+        "Saint Louis Cemetery Number One"
+      ],
+      "Person": [
+        "Marie Laveau",
+        "Nicolas Cage"
+      ],
+      "Category": "Cemetery / Haunted History",
+      "Description": "Tour the famous above-ground cemetery; tickets/tour access required, with Marie Laveau and Nicolas Cage references.",
+      "Lat": 29.9584,
+      "Long": -90.0719,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Lake Lawn Metairie Cemetery",
+      "Address": "5100 Pontchartrain Blvd, New Orleans, LA 70124",
+      "Alias": [
+        "Lake Lawn Cemetery",
+        "Metairie Cemetery"
+      ],
+      "Person": [],
+      "Category": "Cemetery / History",
+      "Description": "Tour Lake Lawn Cemetery or wander cemeteries where legal and appropriate.",
+      "Lat": 29.9864,
+      "Long": -90.1132,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "St. Louis Cathedral",
+      "Address": "615 Pere Antoine Alley, New Orleans, LA 70116",
+      "Alias": [
+        "Cathedral-Basilica of Saint Louis King of France"
+      ],
+      "Person": [],
+      "Category": "Church / Landmark",
+      "Description": "Visit the cathedral and nearby museums on each side while exploring Jackson Square.",
+      "Lat": 29.9579,
+      "Long": -90.0631,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Cooking Classes",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Class / Food",
+      "Description": "Take cooking classes as an organized food/culture activity.",
+      "Lat": 29.9511,
+      "Long": -90.0715,
+      "MapType": "activity",
+      "GeoConfidence": "low",
+      "Notes": "No specific cooking school was named.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Rue de la Course",
+      "Address": "1140 S Carrollton Ave, New Orleans, LA 70118",
+      "Alias": [],
+      "Person": [],
+      "Category": "Coffee",
+      "Description": "Stop for coffee during a St. Charles streetcar outing, then ride back downtown.",
+      "Lat": 29.946,
+      "Long": -90.133,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Mardi Gras Indians",
+      "Address": null,
+      "Alias": [
+        "Black Masking Indians"
+      ],
+      "Person": [],
+      "Category": "Culture / Performance",
+      "Description": "Look for Mardi Gras Indian performances/processions during French Quarter Festival or other cultural events.",
+      "Lat": 29.9584,
+      "Long": -90.0644,
+      "MapType": "event_area",
+      "GeoConfidence": "low",
+      "Notes": "Specific timing and locations vary.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Verti Marte",
+      "Address": "1201 Royal St, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [],
+      "Category": "Deli / Late Night",
+      "Description": "Late-night deli repeatedly recommended, especially the All That Jazz po-boy and spicy muffuletta.",
+      "Lat": 29.9625,
+      "Long": -90.062,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Camellia Grill",
+      "Address": "626 S Carrollton Ave, New Orleans, LA 70118",
+      "Alias": [
+        "The Camellia Grill"
+      ],
+      "Person": [],
+      "Category": "Diner / Classic",
+      "Description": "Get a chocolate freeze and an omelette.",
+      "Lat": 29.9494,
+      "Long": -90.132,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "District Donuts Sliders Brew",
+      "Address": "2209 Magazine St, New Orleans, LA 70130",
+      "Alias": [
+        "District Donuts"
+      ],
+      "Person": [],
+      "Category": "Donuts / Quick Food",
+      "Description": "Good for donuts, sliders, and quick breakfast or lunch.",
+      "Lat": 29.9287,
+      "Long": -90.0763,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": "Magazine Street location used as representative location; verify preferred branch.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Bloody Marys or Voodoo Daiquiris on Bourbon",
+      "Address": "Bourbon St, New Orleans, LA",
+      "Alias": [],
+      "Person": [],
+      "Category": "Drink / Bourbon Street",
+      "Description": "Day drink on Bourbon Street with bloody marys or voodoo daiquiris before the evening gets wild.",
+      "Lat": 29.9585,
+      "Long": -90.0668,
+      "MapType": "drink_area",
+      "GeoConfidence": "low",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Hand Grenade",
+      "Address": "Bourbon St, New Orleans, LA",
+      "Alias": [],
+      "Person": [],
+      "Category": "Drink / Bourbon Street Classic",
+      "Description": "Get a Hand Grenade if you want the unapologetically touristy Bourbon Street drink experience.",
+      "Lat": 29.9585,
+      "Long": -90.0668,
+      "MapType": "drink_area",
+      "GeoConfidence": "low",
+      "Notes": "Source did not name a specific bar; anchored to Bourbon Street.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Big Daiquiri",
+      "Address": "Bourbon St, New Orleans, LA",
+      "Alias": [],
+      "Person": [],
+      "Category": "Drink / Tourist Classic",
+      "Description": "Get a big daiquiri on a warm day.",
+      "Lat": 29.9585,
+      "Long": -90.0668,
+      "MapType": "drink_area",
+      "GeoConfidence": "low",
+      "Notes": "No specific daiquiri shop was named.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Parades",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Event / Seasonal",
+      "Description": "Go to parades if any are happening during the visit.",
+      "Lat": 29.9511,
+      "Long": -90.0715,
+      "MapType": "event_area",
+      "GeoConfidence": "low",
+      "Notes": "No specific parade named; route/date varies.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "French Quarter Festival",
+      "Address": "French Quarter, New Orleans, LA",
+      "Alias": [
+        "FQF"
+      ],
+      "Person": [],
+      "Category": "Festival / Seasonal Event",
+      "Description": "If visiting during French Quarter Festival, lean into stages, food vendors, brass bands, Mardi Gras Indians, funk, and traditional jazz rather than overbooking tours.",
+      "Lat": 29.9584,
+      "Long": -90.0644,
+      "MapType": "event_area",
+      "GeoConfidence": "approximate",
+      "Notes": "Seasonal event spread across the French Quarter and riverfront; check annual dates.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "New Orleans Style Fishing Charters",
+      "Address": "Lafitte, LA",
+      "Alias": [
+        "New Orleans Style Fishing Charters",
+        "Lafitte fishing charter"
+      ],
+      "Person": [],
+      "Category": "Fishing Charter / Outdoor",
+      "Description": "Book a fishing charter down in Lafitte, especially for sunrise redfish fishing.",
+      "Lat": 29.6669,
+      "Long": -90.1087,
+      "MapType": "activity",
+      "GeoConfidence": "low",
+      "Notes": "Town anchor used; exact marina/departure may vary.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "French Market Food Stands",
+      "Address": "1008 N Peters St, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [],
+      "Category": "Food / Market",
+      "Description": "Try piña colada and alligator sausage at the French Market area.",
+      "Lat": 29.9589,
+      "Long": -90.0594,
+      "MapType": "food_area",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Snowballs",
+      "Address": null,
+      "Alias": [
+        "Snoballs",
+        "Snow cones"
+      ],
+      "Person": [],
+      "Category": "Food / Seasonal Treat",
+      "Description": "Get New Orleans snowballs as a local warm-weather treat.",
+      "Lat": 29.9511,
+      "Long": -90.0715,
+      "MapType": "activity",
+      "GeoConfidence": "low",
+      "Notes": "No specific stand was named in the Reddit recommendations.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "The Prytania Bar Food",
+      "Address": "3445 Prytania St, New Orleans, LA 70115",
+      "Alias": [],
+      "Person": [],
+      "Category": "Food at Bar",
+      "Description": "Try Mexican-style dishes, red beans and rice, or wings while seeing music at The Prytania Bar.",
+      "Lat": 29.9248,
+      "Long": -90.0955,
+      "MapType": "food_at_place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Chalmette Battlefield",
+      "Address": "8606 W St Bernard Hwy, Chalmette, LA 70043",
+      "Alias": [
+        "Chalmette National Battlefield"
+      ],
+      "Person": [],
+      "Category": "Historic Site",
+      "Description": "Visit the War of 1812 battlefield, especially via the Creole Queen historic cruise or paired with Rocky & Carlo’s.",
+      "Lat": 29.9426,
+      "Long": -89.9883,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "The Columns",
+      "Address": "3811 St Charles Ave, New Orleans, LA 70115",
+      "Alias": [
+        "Columns Hotel"
+      ],
+      "Person": [],
+      "Category": "Hotel Bar / Porch Drink",
+      "Description": "Stop for a drink on the porch during or after a St. Charles streetcar ride.",
+      "Lat": 29.9257,
+      "Long": -90.0966,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Jackson Square",
+      "Address": "701 Decatur St, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [],
+      "Category": "Landmark / Public Square",
+      "Description": "People-watch, see artists, listen to bands, and use it as a classic French Quarter sightseeing anchor.",
+      "Lat": 29.9575,
+      "Long": -90.063,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "French Market",
+      "Address": "1008 N Peters St, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [],
+      "Category": "Market / Shopping",
+      "Description": "Walk toward the French Market for shopping and food, with the caveat that one commenter said it is not what it used to be.",
+      "Lat": 29.9589,
+      "Long": -90.0594,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "New Orleans Museum of Art",
+      "Address": "1 Collins Diboll Cir, New Orleans, LA 70124",
+      "Alias": [
+        "NOMA"
+      ],
+      "Person": [],
+      "Category": "Museum / Art",
+      "Description": "Use NOMA as the anchor for the City Park sculpture garden and art-museum visit.",
+      "Lat": 29.9866,
+      "Long": -90.0934,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Ogden Museum of Southern Art",
+      "Address": "925 Camp St, New Orleans, LA 70130",
+      "Alias": [
+        "Ogden Museum"
+      ],
+      "Person": [],
+      "Category": "Museum / Art",
+      "Description": "Visit the Ogden Museum for Southern art in the Arts/Warehouse District.",
+      "Lat": 29.9437,
+      "Long": -90.0708,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Mardi Gras World",
+      "Address": "1380 Port of New Orleans Pl, New Orleans, LA 70130",
+      "Alias": [
+        "Blaine Kern's Mardi Gras World"
+      ],
+      "Person": [],
+      "Category": "Museum / Attraction",
+      "Description": "Tour the float-building warehouse; one commenter suggested rideshare because parking can be expensive.",
+      "Lat": 29.9352,
+      "Long": -90.0615,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Sazerac House",
+      "Address": "101 Magazine St, New Orleans, LA 70130",
+      "Alias": [],
+      "Person": [],
+      "Category": "Museum / Cocktail History",
+      "Description": "Visit for cocktail history, self-guided exhibits, tastings, and Sazerac-related New Orleans lore.",
+      "Lat": 29.9518,
+      "Long": -90.067,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Backstreet Cultural Museum",
+      "Address": "1531 St. Philip St, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [
+        "Sylvester Francis"
+      ],
+      "Category": "Museum / Culture",
+      "Description": "Small Tremé museum focused on Mardi Gras Indians, second lines, jazz funerals, and Black New Orleans cultural traditions.",
+      "Lat": 29.9668,
+      "Long": -90.0662,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Audubon Insectarium",
+      "Address": "1 Canal St, New Orleans, LA 70130",
+      "Alias": [
+        "Insectarium"
+      ],
+      "Person": [],
+      "Category": "Museum / Family Attraction",
+      "Description": "Visit the Insectarium, often paired with the aquarium downtown.",
+      "Lat": 29.9513,
+      "Long": -90.0633,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Historic New Orleans Collection",
+      "Address": "520 Royal St, New Orleans, LA 70130",
+      "Alias": [
+        "HNOC"
+      ],
+      "Person": [],
+      "Category": "Museum / History",
+      "Description": "Free French Quarter museum and research institution; rotating exhibits were specifically praised.",
+      "Lat": 29.9577,
+      "Long": -90.0661,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "The National WWII Museum",
+      "Address": "945 Magazine St, New Orleans, LA 70130",
+      "Alias": [
+        "National World War II Museum"
+      ],
+      "Person": [],
+      "Category": "Museum / History",
+      "Description": "Major museum that commenters treated as a solid first-time New Orleans plan.",
+      "Lat": 29.943,
+      "Long": -90.0706,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Preservation Hall",
+      "Address": "726 St Peter, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [
+        "Preservation Hall Jazz Band"
+      ],
+      "Category": "Music / Jazz Venue",
+      "Description": "Classic traditional New Orleans jazz show; repeatedly described as a must / can’t-miss.",
+      "Lat": 29.9583,
+      "Long": -90.065,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Snug Harbor Jazz Bistro",
+      "Address": "626 Frenchmen St, New Orleans, LA 70116",
+      "Alias": [
+        "Snug Harbor"
+      ],
+      "Person": [],
+      "Category": "Music / Jazz Venue",
+      "Description": "Sit-down jazz venue on Frenchmen Street.",
+      "Lat": 29.965,
+      "Long": -90.057,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Brass Bands",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Music / Performance",
+      "Description": "Seek out brass bands, especially during festival wandering and around the French Quarter.",
+      "Lat": 29.9584,
+      "Long": -90.0644,
+      "MapType": "event_area",
+      "GeoConfidence": "low",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Jackson Square Street Bands",
+      "Address": "701 Decatur St, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [],
+      "Category": "Music / Street Performance",
+      "Description": "Listen to bands playing around Jackson Square.",
+      "Lat": 29.9575,
+      "Long": -90.063,
+      "MapType": "event_area",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Bywater",
+      "Address": null,
+      "Alias": [
+        "The Bywater"
+      ],
+      "Person": [],
+      "Category": "Neighborhood / Area",
+      "Description": "Explore the Bywater as a neighborhood beyond the French Quarter, with colorful streets, bars, and restaurants.",
+      "Lat": 29.9664,
+      "Long": -90.0368,
+      "MapType": "neighborhood",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Faubourg Marigny",
+      "Address": null,
+      "Alias": [
+        "Marigny"
+      ],
+      "Person": [],
+      "Category": "Neighborhood / Area",
+      "Description": "Explore the Marigny, especially around Frenchmen Street, for nightlife, bars, music, and local-feeling wandering.",
+      "Lat": 29.9651,
+      "Long": -90.0525,
+      "MapType": "neighborhood",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "French Quarter",
+      "Address": null,
+      "Alias": [
+        "Vieux Carré"
+      ],
+      "Person": [],
+      "Category": "Neighborhood / Area",
+      "Description": "Walk the French Quarter slowly, read plaques, people-watch, see street musicians, and use it as the classic first-time New Orleans base.",
+      "Lat": 29.9584,
+      "Long": -90.0644,
+      "MapType": "neighborhood",
+      "GeoConfidence": "approximate",
+      "Notes": "Centroid coordinate for map clustering, not a single venue.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Garden District",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Neighborhood / Area",
+      "Description": "Walk or take an architecture tour through the Garden District for mansions, trees, and a calmer pace.",
+      "Lat": 29.9299,
+      "Long": -90.084,
+      "MapType": "neighborhood",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Treme",
+      "Address": null,
+      "Alias": [
+        "Tremé"
+      ],
+      "Person": [],
+      "Category": "Neighborhood / Area",
+      "Description": "Visit Tremé for New Orleans history, Black cultural traditions, music history, and the Backstreet Cultural Museum.",
+      "Lat": 29.967,
+      "Long": -90.0715,
+      "MapType": "neighborhood",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Uptown",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Neighborhood / Area",
+      "Description": "Ride or walk through Uptown for oak-lined streets, architecture, and a less tourist-dense view of the city.",
+      "Lat": 29.9416,
+      "Long": -90.112,
+      "MapType": "neighborhood",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Algiers Point",
+      "Address": null,
+      "Alias": [
+        "Algiers"
+      ],
+      "Person": [],
+      "Category": "Neighborhood / Ferry Destination",
+      "Description": "Take the ferry across the Mississippi to Algiers Point, have a drink, enjoy the view, and return by ferry.",
+      "Lat": 29.9522,
+      "Long": -90.0511,
+      "MapType": "neighborhood",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Bayou St. John",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Neighborhood / Outdoor Area",
+      "Description": "Explore Bayou St. John as a worthwhile area beyond the Quarter.",
+      "Lat": 29.9813,
+      "Long": -90.0845,
+      "MapType": "neighborhood",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Frenchmen Art Bazaar",
+      "Address": "619 Frenchmen St, New Orleans, LA 70116",
+      "Alias": [
+        "Frenchmen Art Market",
+        "Palace Market"
+      ],
+      "Person": [],
+      "Category": "Night Market / Art",
+      "Description": "Check out the large outdoor night art market near Frenchmen Street, reportedly open late.",
+      "Lat": 29.965,
+      "Long": -90.0571,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Vue Orleans",
+      "Address": "2 Canal St, New Orleans, LA 70130",
+      "Alias": [
+        "Vue Orleans Observatory"
+      ],
+      "Person": [],
+      "Category": "Observation Deck / Culture",
+      "Description": "Indoor/outdoor observatory and cultural attraction with views over New Orleans and the river.",
+      "Lat": 29.9507,
+      "Long": -90.0635,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Bike Riding Around New Orleans",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Outdoor / Active",
+      "Description": "Ride bikes around the city as an active way to explore neighborhoods.",
+      "Lat": 29.9511,
+      "Long": -90.0715,
+      "MapType": "activity",
+      "GeoConfidence": "low",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "City Park",
+      "Address": "1 Palm Dr, New Orleans, LA 70124",
+      "Alias": [],
+      "Person": [],
+      "Category": "Park / Outdoor",
+      "Description": "Visit City Park for oak trees, walking, sculpture garden, museums, and the quieter Café du Monde location.",
+      "Lat": 30.0017,
+      "Long": -90.0928,
+      "MapType": "park",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Whitney Plantation",
+      "Address": "5099 LA-18, Edgard, LA 70049",
+      "Alias": [],
+      "Person": [],
+      "Category": "Plantation / History",
+      "Description": "Educational and raw history tour centered on slavery and plantation history.",
+      "Lat": 29.981,
+      "Long": -90.779,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "NOLA Poboys",
+      "Address": "908 Bourbon St, New Orleans, LA 70116",
+      "Alias": [
+        "NOLA Po-Boys"
+      ],
+      "Person": [],
+      "Category": "Po-boy Shop",
+      "Description": "French Quarter shrimp po-boy recommendation.",
+      "Lat": 29.9605,
+      "Long": -90.064,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Parkway Bakery & Tavern",
+      "Address": "538 Hagan Ave, New Orleans, LA 70119",
+      "Alias": [
+        "Parkway"
+      ],
+      "Person": [],
+      "Category": "Po-boy Shop",
+      "Description": "Get a fried shrimp po-boy.",
+      "Lat": 29.9822,
+      "Long": -90.0908,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Ask Tour Guides and Servers for Recommendations",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Practical Tip",
+      "Description": "Ask tour guides and servers for real-time food and activity recommendations during the trip.",
+      "Lat": null,
+      "Long": null,
+      "MapType": "non_map_tip",
+      "GeoConfidence": "n/a",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Avoid T-Shirt Shops and Bad Bourbon Street Music",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Practical Tip",
+      "Description": "Avoid generic t-shirt shops, mediocre cafeteria-grade dining, and bad Bourbon Street music.",
+      "Lat": null,
+      "Long": null,
+      "MapType": "non_map_tip",
+      "GeoConfidence": "n/a",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Avoid Obvious Tourist-Trap Breakfast Spots",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Practical Tip / Food Strategy",
+      "Description": "Be wary of obvious French Quarter tourist-trap breakfast spots; commenters specifically criticized Café Fleur De-Lis.",
+      "Lat": null,
+      "Long": null,
+      "MapType": "non_map_tip",
+      "GeoConfidence": "n/a",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Avoid Riverboat Dinner as Main Meal",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Practical Tip / Food Strategy",
+      "Description": "Several commenters suggested using riverboats for sightseeing or drinks, then eating dinner somewhere better.",
+      "Lat": null,
+      "Long": null,
+      "MapType": "non_map_tip",
+      "GeoConfidence": "n/a",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Make Dinner Reservations Early",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Practical Tip / Food Strategy",
+      "Description": "Make reservations as soon as possible for nicer restaurants, especially Commander’s Palace and Atchafalaya brunch.",
+      "Lat": null,
+      "Long": null,
+      "MapType": "non_map_tip",
+      "GeoConfidence": "n/a",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Use Café du Monde To-Go Window",
+      "Address": "800 Decatur St, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [],
+      "Category": "Practical Tip / Food Strategy",
+      "Description": "At Café du Monde, use the to-go window or alternate locations when the main line is long.",
+      "Lat": 29.9576,
+      "Long": -90.0618,
+      "MapType": "tip_at_place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Do Not Overbook During French Quarter Festival",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Practical Tip / Scheduling",
+      "Description": "If visiting during French Quarter Festival, avoid packing the schedule with tours because crowds and stages change the Quarter’s normal flow.",
+      "Lat": null,
+      "Long": null,
+      "MapType": "non_map_tip",
+      "GeoConfidence": "n/a",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Respect Streetcar Commuters",
+      "Address": "St. Charles Ave & Canal St, New Orleans, LA 70130",
+      "Alias": [],
+      "Person": [],
+      "Category": "Practical Tip / Transit",
+      "Description": "Remember the St. Charles streetcar is also real transportation for locals; avoid treating rush-hour cars like a private tourist ride.",
+      "Lat": 29.9525,
+      "Long": -90.07,
+      "MapType": "route_tip",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Atchafalaya",
+      "Address": "901 Louisiana Ave, New Orleans, LA 70115",
+      "Alias": [],
+      "Person": [],
+      "Category": "Restaurant / Brunch",
+      "Description": "Make a reservation, especially for brunch; if booked, try bar seating or dinner.",
+      "Lat": 29.9244,
+      "Long": -90.0933,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Alma Cafe",
+      "Address": "800 Louisa St, New Orleans, LA 70117",
+      "Alias": [
+        "Alma"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Brunch Alternative",
+      "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
+      "Lat": 29.9661,
+      "Long": -90.032,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Bearcat CBD",
+      "Address": "845 Carondelet St, New Orleans, LA 70130",
+      "Alias": [
+        "Bearcat"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Brunch Alternative",
+      "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
+      "Lat": 29.9454,
+      "Long": -90.074,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": "CBD location used as representative location; verify desired branch.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Elizabeth’s",
+      "Address": "601 Gallier St, New Orleans, LA 70117",
+      "Alias": [
+        "Elizabeth's Restaurant"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Brunch Alternative",
+      "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
+      "Lat": 29.9635,
+      "Long": -90.0432,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Molly’s Rise and Shine",
+      "Address": "2368 Magazine St, New Orleans, LA 70130",
+      "Alias": [
+        "Molly's Rise & Shine"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Brunch Alternative",
+      "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
+      "Lat": 29.9274,
+      "Long": -90.0779,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Satsuma Cafe",
+      "Address": "3218 Dauphine St, New Orleans, LA 70117",
+      "Alias": [
+        "Satsuma"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Brunch Alternative",
+      "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
+      "Lat": 29.9633,
+      "Long": -90.0396,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Surrey’s Café & Juice Bar",
+      "Address": "1418 Magazine St, New Orleans, LA 70130",
+      "Alias": [
+        "Surrey's"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Brunch Alternative",
+      "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
+      "Lat": 29.934,
+      "Long": -90.0715,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Toast",
+      "Address": "5433 Laurel St, New Orleans, LA 70115",
+      "Alias": [],
+      "Person": [],
+      "Category": "Restaurant / Brunch Alternative",
+      "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
+      "Lat": 29.9227,
+      "Long": -90.1152,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": "Laurel Street location used as representative location; verify desired branch.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Up & Adam Eatz",
+      "Address": "3903 Canal St, New Orleans, LA 70119",
+      "Alias": [
+        "Up & Adam",
+        "Up & Adam Eats"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Brunch Alternative",
+      "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
+      "Lat": 29.9779,
+      "Long": -90.1069,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Port of Call",
+      "Address": "838 Esplanade Ave, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [],
+      "Category": "Restaurant / Burger Bar",
+      "Description": "Get a Monsoon and burger.",
+      "Lat": 29.9641,
+      "Long": -90.0616,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Katy’s",
+      "Address": "3201 Iberville St, New Orleans, LA 70119",
+      "Alias": [
+        "Katy's Restaurant"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Casual",
+      "Description": "Mentioned by a first-time visitor as close by and tasty.",
+      "Lat": 29.9753,
+      "Long": -90.104,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Rocky & Carlo’s",
+      "Address": "613 W St Bernard Hwy, Chalmette, LA 70043",
+      "Alias": [
+        "Rocky and Carlo's"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Casual",
+      "Description": "Go for mac and cheese, especially if pairing with Chalmette Battlefield.",
+      "Lat": 29.9425,
+      "Long": -89.9666,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Gumbo Shop",
+      "Address": "630 St Peter, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [],
+      "Category": "Restaurant / Creole",
+      "Description": "Recommended for lunch in the French Quarter.",
+      "Lat": 29.9577,
+      "Long": -90.0655,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Commander’s Palace",
+      "Address": "1403 Washington Ave, New Orleans, LA 70130",
+      "Alias": [],
+      "Person": [],
+      "Category": "Restaurant / Creole Fine Dining",
+      "Description": "Classic Garden District restaurant recommended for brunch or dinner; dress up and make reservations.",
+      "Lat": 29.9289,
+      "Long": -90.0842,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Café Fleur De-Lis",
+      "Address": "307 Chartres St, New Orleans, LA 70130",
+      "Alias": [
+        "Cafe Fleur De Lis"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Criticized",
+      "Description": "Mentioned because the OP had heard it was a must, but commenters criticized it as a tourist trap.",
+      "Lat": 29.9553,
+      "Long": -90.0668,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": "Negative/avoid recommendation rather than endorsement.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Adolfo’s",
+      "Address": "611 Frenchmen St, New Orleans, LA 70116",
+      "Alias": [
+        "Adolfo's Restaurant"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Frenchmen Street",
+      "Description": "Frenchmen Street dinner spot; one commenter noted no reservations.",
+      "Lat": 29.965,
+      "Long": -90.0573,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Willie Mae’s",
+      "Address": "2401 St Ann St, New Orleans, LA 70119",
+      "Alias": [
+        "Willie Mae's Scotch House"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Fried Chicken",
+      "Description": "Fried chicken recommendation, with a warning that waits can be long and piece choice may be limited.",
+      "Lat": 29.9717,
+      "Long": -90.0807,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": "Verify current operating location/status before planning; business had post-fire changes.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Muriel’s Jackson Square Ghost Table",
+      "Address": "801 Chartres St, New Orleans, LA 70116",
+      "Alias": [
+        "Muriel's"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Haunted Lore",
+      "Description": "Check out Muriel’s ghost table if doing ghost-tour material around Jackson Square.",
+      "Lat": 29.9583,
+      "Long": -90.0634,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Napoleon House",
+      "Address": "500 Chartres St, New Orleans, LA 70130",
+      "Alias": [],
+      "Person": [],
+      "Category": "Restaurant / Historic Bar",
+      "Description": "Order a quarter muffuletta and Pimm’s Cup in a historic French Quarter setting.",
+      "Lat": 29.9574,
+      "Long": -90.0652,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Bourbon House",
+      "Address": "144 Bourbon St, New Orleans, LA 70130",
+      "Alias": [],
+      "Person": [],
+      "Category": "Restaurant / Seafood",
+      "Description": "Go for charred oysters.",
+      "Lat": 29.954,
+      "Long": -90.0688,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "GW Fins",
+      "Address": "808 Bienville St, New Orleans, LA 70112",
+      "Alias": [
+        "G.W. Fins"
+      ],
+      "Person": [],
+      "Category": "Restaurant / Seafood",
+      "Description": "Recommended as a favorite fancy dinner.",
+      "Lat": 29.9557,
+      "Long": -90.0681,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Woldenberg Park",
+      "Address": "1 Canal St, New Orleans, LA 70130",
+      "Alias": [
+        "Woldenberg Riverfront Park"
+      ],
+      "Person": [],
+      "Category": "Riverfront Park",
+      "Description": "Walk the riverfront and expect crowds around Woldenberg Park during French Quarter Festival.",
+      "Lat": 29.9509,
+      "Long": -90.0634,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Hot Tin",
+      "Address": "2031 St Charles Ave, New Orleans, LA 70130",
+      "Alias": [
+        "Hot Tin Rooftop Bar"
+      ],
+      "Person": [],
+      "Category": "Rooftop Bar",
+      "Description": "Rooftop bar recommended at night for skyline views.",
+      "Lat": 29.936,
+      "Long": -90.079,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Verti Marte All That Jazz Po-boy",
+      "Address": "1201 Royal St, New Orleans, LA 70116",
+      "Alias": [
+        "All That Jazz"
+      ],
+      "Person": [],
+      "Category": "Specific Food / Sandwich",
+      "Description": "Order the All That Jazz po-boy; one commenter said one sandwich can feed two people.",
+      "Lat": 29.9625,
+      "Long": -90.062,
+      "MapType": "food_at_place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Verti Marte Spicy Muffuletta",
+      "Address": "1201 Royal St, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [],
+      "Category": "Specific Food / Sandwich",
+      "Description": "Order the spicy muffuletta at Verti Marte.",
+      "Lat": 29.9625,
+      "Long": -90.062,
+      "MapType": "food_at_place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Frenchmen Street",
+      "Address": "Frenchmen St, New Orleans, LA 70116",
+      "Alias": [],
+      "Person": [],
+      "Category": "Street / Music District",
+      "Description": "Go to Frenchmen Street in the evening for live music, jazz clubs, bars, and the nearby night art market.",
+      "Lat": 29.965,
+      "Long": -90.0572,
+      "MapType": "street",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Bourbon Street",
+      "Address": "Bourbon St, New Orleans, LA",
+      "Alias": [],
+      "Person": [],
+      "Category": "Street / Nightlife",
+      "Description": "Treat Bourbon Street as spectacle rather than the whole trip; daytime drinks were suggested before it gets wild at night.",
+      "Lat": 29.9585,
+      "Long": -90.0668,
+      "MapType": "street",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Magazine Street",
+      "Address": "Magazine St, New Orleans, LA",
+      "Alias": [],
+      "Person": [],
+      "Category": "Street / Shopping Area",
+      "Description": "Walk Magazine Street for restaurants, shops, local-artist goods, and neighborhood wandering.",
+      "Lat": 29.9249,
+      "Long": -90.0852,
+      "MapType": "street",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Royal Street",
+      "Address": "Royal St, New Orleans, LA",
+      "Alias": [],
+      "Person": [],
+      "Category": "Street / Walking Area",
+      "Description": "Stroll Royal Street toward Jackson Square for architecture, galleries, performers, and a calmer French Quarter wander.",
+      "Lat": 29.9592,
+      "Long": -90.0641,
+      "MapType": "street",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Loretta’s Authentic Pralines",
+      "Address": "2101 N Rampart St, New Orleans, LA 70116",
+      "Alias": [
+        "Loretta's Pralines"
+      ],
+      "Person": [],
+      "Category": "Sweets / Beignets",
+      "Description": "Go for pralines and beignets.",
+      "Lat": 29.969,
+      "Long": -90.0576,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": "French Market stall also exists/has existed; verify current preferred location.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Garden District Architecture Tour",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Tour / Architecture",
+      "Description": "Take an architecture tour in the Garden District.",
+      "Lat": 29.9299,
+      "Long": -90.084,
+      "MapType": "activity",
+      "GeoConfidence": "approximate",
+      "Notes": "Operator varies; anchored to Garden District.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "NOLA Pedal Barge",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Tour / Boat",
+      "Description": "Consider NOLA Pedal Barge, with the caveat that one reply raised wildlife-impact concerns.",
+      "Lat": 29.9511,
+      "Long": -90.0715,
+      "MapType": "activity",
+      "GeoConfidence": "low",
+      "Notes": "Verify current departure point and environmental considerations.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Cemetery Tour",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Tour / Cemetery",
+      "Description": "Do a cemetery tour, especially for St. Louis Cemetery No. 1 or Lake Lawn/Metairie Cemetery.",
+      "Lat": 29.9584,
+      "Long": -90.0719,
+      "MapType": "activity",
+      "GeoConfidence": "approximate",
+      "Notes": "Operator and cemetery vary.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "New Orleans Ghost Tour",
+      "Address": null,
+      "Alias": [
+        "Haunted tour",
+        "Haunted pub crawl"
+      ],
+      "Person": [],
+      "Category": "Tour / Haunted",
+      "Description": "Do a ghost or haunted pub tour, even if cheesy; commenters still described them as fun.",
+      "Lat": 29.9584,
+      "Long": -90.0644,
+      "MapType": "activity",
+      "GeoConfidence": "approximate",
+      "Notes": "Anchored to the French Quarter; operator varies.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Louisiana State Museum French Quarter Walking Tour",
+      "Address": "751 Chartres St, New Orleans, LA 70116",
+      "Alias": [
+        "Louisiana State Museum",
+        "The Cabildo"
+      ],
+      "Person": [],
+      "Category": "Tour / History",
+      "Description": "Take a French Quarter walking tour with Louisiana State Museum docents when available.",
+      "Lat": 29.958,
+      "Long": -90.0635,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "National Park Service French Quarter Ranger Talk",
+      "Address": "419 Decatur St, New Orleans, LA 70130",
+      "Alias": [
+        "New Orleans Jazz National Historical Park Visitor Center"
+      ],
+      "Person": [],
+      "Category": "Tour / History",
+      "Description": "Take a French Quarter walking tour or ranger-led program with the National Park Service when available.",
+      "Lat": 29.9549,
+      "Long": -90.0652,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Airboat Swamp Tour",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Tour / Nature",
+      "Description": "Do an airboat swamp tour as a more adrenaline-focused swamp experience.",
+      "Lat": 29.9511,
+      "Long": -90.0715,
+      "MapType": "activity",
+      "GeoConfidence": "low",
+      "Notes": "No specific operator named.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Cajun Encounters Swamp Tour",
+      "Address": "55345 US-90, Slidell, LA 70461",
+      "Alias": [],
+      "Person": [],
+      "Category": "Tour / Nature",
+      "Description": "Specific swamp tour recommendation; choose the smaller boat if available to get closer to wildlife.",
+      "Lat": 30.2762,
+      "Long": -89.7834,
+      "MapType": "place",
+      "GeoConfidence": "medium",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Swamp Tour",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Tour / Nature",
+      "Description": "Do a swamp tour; one thread specifically recommended smaller boats for closer wildlife viewing.",
+      "Lat": 29.9511,
+      "Long": -90.0715,
+      "MapType": "activity",
+      "GeoConfidence": "low",
+      "Notes": "No single operator for generic swamp-tour recommendations.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "NOLA Kayak Tours",
+      "Address": null,
+      "Alias": [],
+      "Person": [],
+      "Category": "Tour / Outdoor",
+      "Description": "Consider NOLA Kayak Tours for an active outdoor excursion.",
+      "Lat": 29.9844,
+      "Long": -90.0881,
+      "MapType": "activity",
+      "GeoConfidence": "low",
+      "Notes": "Exact operator meeting point varies by tour; coordinate is approximate Bayou St. John anchor.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "NOLA Art Walk",
+      "Address": "St Claude Ave, New Orleans, LA",
+      "Alias": [
+        "NOLA Art Walk street art tour"
+      ],
+      "Person": [],
+      "Category": "Tour / Street Art",
+      "Description": "Take a street art tour down St. Claude.",
+      "Lat": 29.9685,
+      "Long": -90.042,
+      "MapType": "tour_route",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Algiers Ferry",
+      "Address": "Canal St Ferry Terminal, New Orleans, LA 70130",
+      "Alias": [
+        "Canal Street Ferry",
+        "Algiers Point ferry"
+      ],
+      "Person": [],
+      "Category": "Transit Experience / Ferry",
+      "Description": "Cheap, short Mississippi River ride to Algiers Point with skyline and river views.",
+      "Lat": 29.9512,
+      "Long": -90.0627,
+      "MapType": "route",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "St. Charles Streetcar",
+      "Address": "St. Charles Ave & Canal St, New Orleans, LA 70130",
+      "Alias": [
+        "St. Charles streetcar",
+        "Route 12"
+      ],
+      "Person": [],
+      "Category": "Transit Experience / Route",
+      "Description": "Ride from Canal Street uptown and back, ideally around golden hour with windows open; be mindful locals use it for commuting.",
+      "Lat": 29.9525,
+      "Long": -90.07,
+      "MapType": "route",
+      "GeoConfidence": "approximate",
+      "Notes": "Coordinate is downtown route anchor, not the whole line.",
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Mississippi Riverfront",
+      "Address": null,
+      "Alias": [
+        "Riverwalk"
+      ],
+      "Person": [],
+      "Category": "Walking Area / View",
+      "Description": "Walk the riverfront for river views, people-watching, ferry access, and a break from the Quarter streets.",
+      "Lat": 29.9543,
+      "Long": -90.0616,
+      "MapType": "area",
+      "GeoConfidence": "approximate",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Audubon Zoo",
+      "Address": "6500 Magazine St, New Orleans, LA 70118",
+      "Alias": [],
+      "Person": [],
+      "Category": "Zoo / Outdoor",
+      "Description": "Visit Audubon Zoo if time allows.",
+      "Lat": 29.923,
+      "Long": -90.1314,
+      "MapType": "place",
+      "GeoConfidence": "high",
+      "Notes": null,
+      "SourceThread": [
+        "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
+        "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
+      ]
+    },
+    {
+      "Name": "Airbnb Home Base",
+      "Address": "Near N Miro St & Florida Ave, New Orleans, LA 70117",
+      "Alias": [
+        "Airbnb",
+        "Vacation rental"
+      ],
+      "Person": [],
+      "Category": "Lodging / Airbnb",
+      "Description": "Approximate home base for the New Orleans trip. Update this record with the exact address and coordinates once confirmed.",
+      "Lat": 29.9748,
+      "Long": -90.0486,
+      "MapType": "lodging",
+      "GeoConfidence": "approximate",
+      "Notes": "Approximate location inferred from the trip-planning screenshot; not an exact address.",
+      "SourceThread": []
+    }
+  ]
+}

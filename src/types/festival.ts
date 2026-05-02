@@ -28,6 +28,14 @@ export type Venue = {
   lat?: number;
   lng?: number;
   hasLocation?: boolean;
+  address?: string;
+  alias?: string[];
+  person?: string[];
+  category?: string;
+  mapType?: string;
+  geoConfidence?: string;
+  notes?: string;
+  sourceThread?: string[];
   permanence?: string;
   serviceType?: "garbage" | "water" | "toilets" | "medic";
   thumbnailUrl: string;
