@@ -39,6 +39,7 @@ type RecommendationItem = {
   MapType?: unknown;
   GeoConfidence?: unknown;
   Notes?: unknown;
+  Comments?: unknown;
   SourceThread?: unknown;
   Favorite?: unknown;
   WebsiteUrl?: unknown;
@@ -126,6 +127,7 @@ function mapRecommendationToVenue(item: RecommendationItem, index: number): Venu
   const aliases = asStringList(item.Alias);
   const people = asStringList(item.Person);
   const notes = asString(item.Notes);
+  const comments = asString(item.Comments);
   const geoConfidence = asString(item.GeoConfidence);
   const sourceThread = asStringList(item.SourceThread);
   const favorite = item.Favorite === true;
@@ -154,6 +156,7 @@ function mapRecommendationToVenue(item: RecommendationItem, index: number): Venu
     mapType,
     geoConfidence: geoConfidence || undefined,
     notes: notes || undefined,
+    comments: comments || undefined,
     sourceThread,
     favorite,
     websiteUrl: websiteUrl || undefined,

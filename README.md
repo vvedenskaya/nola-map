@@ -17,6 +17,7 @@ Interactive New Orleans trip-planning map powered by `nola_reddit_recommendation
 - `MapType`
 - `GeoConfidence`
 - `Notes`
+- `Comments`
 - `SourceThread`
 - `WebsiteUrl`
 - `GoogleMapsUrl`

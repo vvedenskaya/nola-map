@@ -900,6 +900,19 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
       return acc;
     }, {})
   );
+  const [commentsByVenueId, setCommentsByVenueId] = useState<Record<string, string>>(() =>
+    venues.reduce<Record<string, string>>((acc, venue) => {
+      acc[venue.id] = venue.comments || "";
+      return acc;
+    }, {})
+  );
+  const [commentDraftByVenueId, setCommentDraftByVenueId] = useState<Record<string, string>>(() =>
+    venues.reduce<Record<string, string>>((acc, venue) => {
+      acc[venue.id] = venue.comments || "";
+      return acc;
+    }, {})
+  );
+  const [openCommentsVenueId, setOpenCommentsVenueId] = useState<string | null>(null);
   const [activeProjectTypes] = useState<EventType[]>(ALL_PROJECT_TYPES);
   const [isProjectTypeMenuOpen, setIsProjectTypeMenuOpen] = useState(false);
   const [mapType, setMapType] = useState<"satellite" | "roadmap">("satellite");
@@ -1007,6 +1020,18 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
 
   function isVenueFavorite(venue: Venue): boolean {
     return favoriteByVenueId[venue.id] ?? Boolean(venue.favorite);
+  }
+
+  function getVenueComments(venue: Venue): string {
+    return commentsByVenueId[venue.id] ?? venue.comments ?? "";
+  }
+
+  function getVenueCommentDraft(venue: Venue): string {
+    return commentDraftByVenueId[venue.id] ?? getVenueComments(venue);
+  }
+
+  function hasVenueComments(venue: Venue): boolean {
+    return Boolean(getVenueComments(venue).trim());
   }
 
   const visibleVenues = venues.filter((venue) => {
@@ -1390,6 +1415,49 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
     });
   }
 
+  function toggleCommentsEditor(venue: Venue) {
+    setCommentDraftByVenueId((current) => ({
+      ...current,
+      [venue.id]: current[venue.id] ?? getVenueComments(venue),
+    }));
+    setOpenCommentsVenueId((current) => (current === venue.id ? null : venue.id));
+  }
+
+  function saveComments(venue: Venue) {
+    const previousComments = getVenueComments(venue);
+    const nextComments = getVenueCommentDraft(venue).trim();
+    setCommentsByVenueId((current) => ({
+      ...current,
+      [venue.id]: nextComments,
+    }));
+    setOpenCommentsVenueId(null);
+
+    fetch("/api/comments", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: venue.name, comments: nextComments }),
+    }).then((response) => {
+      if (response.ok) return;
+      setCommentsByVenueId((current) => ({
+        ...current,
+        [venue.id]: previousComments,
+      }));
+      setCommentDraftByVenueId((current) => ({
+        ...current,
+        [venue.id]: previousComments,
+      }));
+    }).catch(() => {
+      setCommentsByVenueId((current) => ({
+        ...current,
+        [venue.id]: previousComments,
+      }));
+      setCommentDraftByVenueId((current) => ({
+        ...current,
+        [venue.id]: previousComments,
+      }));
+    });
+  }
+
   function clearHoverCloseTimer() {
     if (!hoverCloseTimeoutRef.current) return;
     globalThis.clearTimeout(hoverCloseTimeoutRef.current);
@@ -1416,6 +1484,113 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
       startWidth: sidebarWidth,
     };
     event.currentTarget.setPointerCapture(event.pointerId);
+  }
+
+  function renderCommentsEditor(venue: Venue, options?: { compact?: boolean }) {
+    const compact = options?.compact ?? false;
+    const comments = getVenueComments(venue);
+    const isOpen = openCommentsVenueId === venue.id;
+
+    return (
+      <div className={`legacy-comments-editor ${compact ? "is-compact" : ""}`}>
+        <button
+          type="button"
+          className={`legacy-comments-toggle ${comments ? "has-comments has-indicator" : ""}`}
+          aria-expanded={isOpen}
+          onClick={(event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            toggleCommentsEditor(venue);
+          }}
+        >
+          <span aria-hidden="true">✎</span>
+          <span>{comments ? "Edit comments" : "Add comments"}</span>
+        </button>
+        {comments && !isOpen ? <p className="legacy-comments-preview">{comments}</p> : null}
+        {isOpen ? (
+          <div
+            className="legacy-comments-form"
+            onClick={(event) => event.stopPropagation()}
+            onMouseDown={(event) => event.stopPropagation()}
+          >
+            <textarea
+              value={getVenueCommentDraft(venue)}
+              placeholder="Add personal comments..."
+              onChange={(event) => {
+                setCommentDraftByVenueId((current) => ({
+                  ...current,
+                  [venue.id]: event.target.value,
+                }));
+              }}
+            />
+            <div className="legacy-comments-actions">
+              <button type="button" className="legacy-chip active" onClick={() => saveComments(venue)}>
+                Save
+              </button>
+              <button
+                type="button"
+                className="legacy-chip"
+                onClick={() => {
+                  setCommentDraftByVenueId((current) => ({
+                    ...current,
+                    [venue.id]: getVenueComments(venue),
+                  }));
+                  setOpenCommentsVenueId(null);
+                }}
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        ) : null}
+      </div>
+    );
+  }
+
+  function renderSidebarVenueRow(venue: Venue, key: string, favoriteButtonClassName?: string) {
+    return (
+      <div
+        key={key}
+        className={`legacy-venue-item-row ${selectedVenueId === venue.id || mapFocusedVenueId === venue.id || mobileDetailVenueId === venue.id ? "active" : ""}`}
+      >
+        <button
+          className="legacy-venue-item"
+          type="button"
+          onClick={() => openListVenue(venue)}
+        >
+          <span
+            className="legacy-venue-dot"
+            style={{ "--pin-color": venueColorById.get(venue.id) || venue.accent || "#8b5cf6" } as CSSProperties}
+          />
+          <span>
+            {getServiceIcon(venue.serviceType) || getCategoryStyle(getVenueCategoryKey(venue)).icon} {venue.name}
+          </span>
+        </button>
+        <button
+          type="button"
+          className={`legacy-comment-icon-button ${hasVenueComments(venue) ? "has-comments has-indicator" : ""}`}
+          aria-label={`Edit comments for ${venue.name}`}
+          aria-expanded={openCommentsVenueId === venue.id}
+          onClick={(event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            toggleCommentsEditor(venue);
+          }}
+        >
+          ✎
+        </button>
+        <button
+          type="button"
+          className={favoriteButtonClassName ?? `legacy-favorite-icon-button ${isVenueFavorite(venue) ? "is-active" : ""}`}
+          aria-label={isVenueFavorite(venue) ? `Unfavorite ${venue.name}` : `Favorite ${venue.name}`}
+          aria-pressed={isVenueFavorite(venue)}
+          onClick={() => toggleFavorite(venue)}
+        >
+          ★
+        </button>
+        {openCommentsVenueId === venue.id ? renderCommentsEditor(venue, { compact: true }) : null}
+      </div>
+    );
   }
 
   function renderPlaceCard(venue: Venue, options?: { compact?: boolean; onClose?: () => void }) {
@@ -1481,6 +1656,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
           ) : null}
           {venue.description ? <p className="legacy-place-card-description">{venue.description}</p> : null}
           {venue.notes ? <p className="legacy-place-card-note">{venue.notes}</p> : null}
+          {renderCommentsEditor(venue, { compact })}
           <div className="legacy-place-card-actions">
             {primaryActionUrl ? (
               <a href={primaryActionUrl} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>
@@ -2095,7 +2271,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                         }}
                       >
                         <div
-                          className={`legacy-service-pin ${venue.serviceType === "toilets" ? "is-toilets" : ""} ${venue.serviceType === "water" ? "is-water" : ""}`}
+                          className={`legacy-service-pin ${venue.serviceType === "toilets" ? "is-toilets" : ""} ${venue.serviceType === "water" ? "is-water" : ""} ${hasVenueComments(venue) ? "has-comment" : ""} ${isVenueFavorite(venue) ? "has-favorite" : ""}`}
                           aria-label={venue.name}
                           style={{ "--pin-color": venueColorById.get(venue.id) || "#4b5563" } as CSSProperties}
                         >
@@ -2134,7 +2310,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                         }}
                       >
                         <button
-                          className={`legacy-pin ${isSelected ? "is-selected" : ""} ${lastInteractedVenueId === venue.id ? "is-last-interacted" : ""}`}
+                          className={`legacy-pin ${isSelected ? "is-selected" : ""} ${lastInteractedVenueId === venue.id ? "is-last-interacted" : ""} ${hasVenueComments(venue) ? "has-comment" : ""} ${isVenueFavorite(venue) ? "has-favorite" : ""}`}
                           type="button"
                           aria-label={venue.name}
                           style={{ "--pin-color": venueColorById.get(venue.id) || venue.accent || "#8b5cf6" } as CSSProperties}
@@ -2339,6 +2515,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                   {selectedVenue.notes ? (
                     <p className="legacy-popup-description"><strong>Note:</strong> {selectedVenue.notes}</p>
                   ) : null}
+                  {renderCommentsEditor(selectedVenue)}
                   {selectedVenueScheduledEvents.length > 0 ? (
                     <>
                       <details className="legacy-popup-section is-schedule" open>
@@ -2640,35 +2817,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                     {group.entries.map((entry) => {
                       if (entry.kind === "location") {
                         const venue = entry.venue;
-                        return (
-                          <div
-                            key={entry.id}
-                            className={`legacy-venue-item-row ${selectedVenueId === venue.id || mapFocusedVenueId === venue.id || mobileDetailVenueId === venue.id ? "active" : ""}`}
-                          >
-                            <button
-                              className="legacy-venue-item"
-                              type="button"
-                              onClick={() => openListVenue(venue)}
-                            >
-                              <span
-                                className="legacy-venue-dot"
-                                style={{ "--pin-color": venueColorById.get(venue.id) || venue.accent || "#8b5cf6" } as CSSProperties}
-                              />
-                              <span>
-                                {getServiceIcon(venue.serviceType) || getCategoryStyle(getVenueCategoryKey(venue)).icon} {venue.name}
-                              </span>
-                            </button>
-                            <button
-                              type="button"
-                              className={`legacy-favorite-icon-button ${isVenueFavorite(venue) ? "is-active" : ""}`}
-                              aria-label={isVenueFavorite(venue) ? `Unfavorite ${venue.name}` : `Favorite ${venue.name}`}
-                              aria-pressed={isVenueFavorite(venue)}
-                              onClick={() => toggleFavorite(venue)}
-                            >
-                              ★
-                            </button>
-                          </div>
-                        );
+                        return renderSidebarVenueRow(venue, entry.id);
                       }
                       const event = entry.event;
                       const venue = entry.venue;
@@ -2716,35 +2865,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                 ) : favoriteSidebarEntries.map((entry) => {
                   if (entry.kind !== "location") return null;
                   const venue = entry.venue;
-                  return (
-                    <div
-                      key={`favorite:${venue.id}`}
-                      className={`legacy-venue-item-row ${selectedVenueId === venue.id || mapFocusedVenueId === venue.id || mobileDetailVenueId === venue.id ? "active" : ""}`}
-                    >
-                      <button
-                        className="legacy-venue-item"
-                        type="button"
-                        onClick={() => openListVenue(venue)}
-                      >
-                        <span
-                          className="legacy-venue-dot"
-                          style={{ "--pin-color": venueColorById.get(venue.id) || venue.accent || "#8b5cf6" } as CSSProperties}
-                        />
-                        <span>
-                          {getServiceIcon(venue.serviceType) || getCategoryStyle(getVenueCategoryKey(venue)).icon} {venue.name}
-                        </span>
-                      </button>
-                      <button
-                        type="button"
-                        className="legacy-favorite-icon-button is-active"
-                        aria-label={`Unfavorite ${venue.name}`}
-                        aria-pressed="true"
-                        onClick={() => toggleFavorite(venue)}
-                      >
-                        ★
-                      </button>
-                    </div>
-                  );
+                  return renderSidebarVenueRow(venue, `favorite:${venue.id}`, "legacy-favorite-icon-button is-active");
                 })}
               </div>
             </section>
@@ -3334,6 +3455,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                   {selectedMobileVenue.notes ? (
                     <p className="legacy-popup-description"><strong>Note:</strong> {selectedMobileVenue.notes}</p>
                   ) : null}
+                  {renderCommentsEditor(selectedMobileVenue)}
                   {selectedMobileVenueScheduledEvents.length > 0 ? (
                     <details className="legacy-popup-section is-schedule" open>
                       <summary className="legacy-popup-section-title">Schedule</summary>

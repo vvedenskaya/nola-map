@@ -36,6 +36,7 @@ export type Venue = {
   mapType?: string;
   geoConfidence?: string;
   notes?: string;
+  comments?: string;
   sourceThread?: string[];
   favorite?: boolean;
   websiteUrl?: string;

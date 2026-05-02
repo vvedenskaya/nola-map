@@ -630,7 +630,7 @@ a {
 
 .legacy-venue-item-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   align-items: stretch;
 }
 
@@ -648,7 +648,9 @@ a {
   background: #f3f0e4;
 }
 
-.legacy-favorite-icon-button {
+.legacy-favorite-icon-button,
+.legacy-comment-icon-button {
+  position: relative;
   width: 36px;
   border: 0;
   border-left: 1px solid #ece7db;
@@ -660,10 +662,29 @@ a {
   line-height: 1;
 }
 
+.legacy-comment-icon-button {
+  font-size: 0.92rem;
+}
+
 .legacy-favorite-icon-button:hover,
-.legacy-favorite-icon-button.is-active {
+.legacy-favorite-icon-button.is-active,
+.legacy-comment-icon-button:hover,
+.legacy-comment-icon-button.has-comments {
   color: #d97706;
   background: #fff7ed;
+}
+
+.legacy-comment-icon-button.has-indicator::after,
+.legacy-comments-toggle.has-indicator::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #dc2626;
+  box-shadow: 0 0 0 2px #fff7ed;
 }
 
 .legacy-favorite-button {
@@ -968,6 +989,77 @@ a {
   color: #675e53;
 }
 
+.legacy-comments-editor {
+  display: grid;
+  gap: 6px;
+}
+
+.legacy-venue-item-row > .legacy-comments-editor {
+  grid-column: 1 / -1;
+  padding: 8px 10px 10px;
+  border-bottom: 1px solid #ece7db;
+  background: #fffaf0;
+}
+
+.legacy-comments-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  justify-self: start;
+  min-height: 24px;
+  border: 1px solid #d9d4c5;
+  border-radius: 999px;
+  background: #f8f3e8;
+  color: #554d43;
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.legacy-comments-toggle.has-comments {
+  border-color: #d97706;
+  background: #fff7ed;
+  color: #9a3412;
+}
+
+.legacy-comments-preview {
+  margin: 0;
+  color: #554d43;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  white-space: pre-wrap;
+}
+
+.legacy-comments-form {
+  display: grid;
+  gap: 6px;
+}
+
+.legacy-comments-form textarea {
+  width: 100%;
+  min-height: 72px;
+  resize: vertical;
+  border: 1px solid #d9d4c5;
+  border-radius: 8px;
+  background: #fffdf3;
+  color: #1f1a14;
+  font: inherit;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  padding: 8px;
+}
+
+.legacy-comments-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
 .legacy-place-card-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1087,6 +1179,25 @@ a {
 .legacy-pin-maptype-icon.is-star {
   font-size: 1rem;
   color: #fff7ed;
+}
+
+.legacy-pin.has-favorite,
+.legacy-service-pin.has-favorite {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.98), 0 0 0 5px #f59e0b, 0 3px 8px rgba(0, 0, 0, 0.42);
+}
+
+.legacy-pin.has-comment::after,
+.legacy-service-pin.has-comment::after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: #dc2626;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.55);
 }
 
 .legacy-pin.is-selected {
