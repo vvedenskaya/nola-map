@@ -32,7 +32,7 @@
         "Audubon Aquarium of the Americas"
       ],
       "Person": [],
-      "Category": "Aquarium / Family Attraction",
+      "Category": "Attraction",
       "Description": "Visit the Audubon Aquarium as a tourist-friendly family attraction near the riverfront.",
       "Lat": 29.9513,
       "Long": -90.0633,
@@ -43,14 +43,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Attraction",
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=2405114738061364040&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPHvxkPN9U4jS2-Xh5BiZkQCjVUAXitlQMuBlH2RQHRkkjawDGyo1dTc6nk3F5_6-1C80WYua9R9Znc5H6HeqxFmO8lAxdJZu9G3oQmifNMaWJD1E-3tHv1Olt1Z2W_sfSyRMGXKrdIAGh5A=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "New Orleans East",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Area / Questionable Recommendation",
+      "Category": "Neighborhood",
       "Description": "A commenter jokingly or sarcastically suggested walking through New Orleans East; replies treated it as questionable rather than a standard tourist recommendation.",
       "Lat": 30.0328,
       "Long": -89.974,
@@ -61,7 +71,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Neighborhood"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=2304019432305153874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMAWkY0RxWZhMn21lsoXAtT6ErtWD5UEPxzCNVPouhTZVW7KHXLAY9hxYBEmfwVP5emHDKiwiCiVURaZGFpTZXGix8rruirwqJ4UTF3tBhaE2tFnEgcgDE-fMi0O43Hke1d1MVF8QlfCmP7nw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "JAMNOLA",
@@ -70,7 +89,7 @@
         "Joy Art Music New Orleans"
       ],
       "Person": [],
-      "Category": "Art / Culture Attraction",
+      "Category": "Art",
       "Description": "Interactive cultural funhouse/photo-op experience created with local artists.",
       "Lat": 29.9669,
       "Long": -90.0548,
@@ -81,7 +100,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Art",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=17115489149417303556&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOqZXJL6_7VgpJFeGaRA8izcDOzVf1haQfDabb2YqfF1OyXc-2feUbDtxS8WHmqy9hJ_P8IGSuSrTaBCLJXT8Qci4w_mw6K8XCdIESkYswPS_CX_IaBVUkBEiV98LkkUPxJEPIZBciqq3A5GVA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": null
     },
     {
       "Name": "Sydney and Walda Besthoff Sculpture Garden",
@@ -91,7 +120,7 @@
         "NOMA Sculpture Garden"
       ],
       "Person": [],
-      "Category": "Art / Outdoor",
+      "Category": "Art",
       "Description": "Visit the sculpture garden in City Park / NOMA as part of a park outing.",
       "Lat": 29.9865,
       "Long": -90.0934,
@@ -102,7 +131,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Art",
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=15446867431755227114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMs0EaBwyG3beWGN4Mq4gBDQ0yoE-Xc2SBlM1kCuSdVLd2Q_90VxHv4ZwwiHBg3U6xS9ygIEHnQwIhxH4bySEcF4tSHYLtUauUMQPktNbcaYjxugwuVS8oEBOG20VWQGoVEFzflARxILaaQsHCBC71ySQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Crown & Anchor English Pub",
@@ -111,7 +150,7 @@
         "Crown & Anchor"
       ],
       "Person": [],
-      "Category": "Bar / Algiers",
+      "Category": "Bar",
       "Description": "Have a pint after taking the ferry to Algiers Point, then return by ferry.",
       "Lat": 29.9522,
       "Long": -90.0516,
@@ -122,7 +161,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Transit"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=13280032243403691816&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEAEuEpryTDrCLHEzZWrt2ulj6Y0-VuSnh9dopxwBNh5FDJYCLaIu1hjRYAZo0ajirUUzn2_sR8gIUe71xBGjY-P_3nUyPf2kk=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Old Point Bar",
@@ -131,7 +180,7 @@
         "The Old Point"
       ],
       "Person": [],
-      "Category": "Bar / Algiers",
+      "Category": "Bar",
       "Description": "Have a drink in Algiers Point as part of the ferry outing.",
       "Lat": 29.9505,
       "Long": -90.0501,
@@ -142,7 +191,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Transit"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=12300164608042533355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGoE_9-8E4Wsxt3GA4fOghr6BS8VxBmb6HwocI-XO57yZgsQgkIkuDjFq5gvD4qPoxOw60dwaHTv5OE_FdEFTYpmeyV2s9leeU=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Jean Lafitte’s Blacksmith Shop Bar",
@@ -153,7 +212,7 @@
       "Person": [
         "Jean Lafitte"
       ],
-      "Category": "Bar / Haunted Atmosphere",
+      "Category": "Bar",
       "Description": "Go for old-bar atmosphere and ghostly/lore vibes.",
       "Lat": 29.961,
       "Long": -90.0635,
@@ -164,7 +223,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=7362656199387193706&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNgXOa5xS8z5ypkGl1Ccf6Wxb2pp73PJ-9pGTMamy0R7ZSST4esbqS20PtoH4B4Mv8N3rL_Hu1Jq28nLiycUXiIiBvA99vrXA2HWeFm5iVZdTBd7w2F0X8JwqlRaB0DQ-pA2vfxnZuMpKAzN6g=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Carousel Bar & Lounge",
@@ -173,7 +241,7 @@
         "Carousel Bar at Hotel Monteleone"
       ],
       "Person": [],
-      "Category": "Bar / Hotel Bar",
+      "Category": "Bar",
       "Description": "Visit the rotating Carousel Bar at Hotel Monteleone; fun but hard to get a seat.",
       "Lat": 29.9544,
       "Long": -90.0684,
@@ -184,7 +252,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=15965434352581821261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFeWqpSPmbJQxE765KFGURR9_yQmTLxJLiLtLhDAFoRMpbgiSHPIhIdW8WSNI2X1hI1KTXa-jefVp1FmKiB2qQaUe9uykqU7bA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "The Prytania Bar",
@@ -196,7 +273,7 @@
         "George Kilby Jr.",
         "The Random Few"
       ],
-      "Category": "Bar / Live Music",
+      "Category": "Bar",
       "Description": "If Uptown on Monday evening, catch George Kilby Jr. & The Random Few, 7–10 PM, and consider eating there.",
       "Lat": 29.9248,
       "Long": -90.0955,
@@ -207,7 +284,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=5192231824846665801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZQrf1KgWiiVQZD47mu4HArqWPA2WesnL4FRCdZ97YB6k_nsDiPOyimBxDkmbkux0ZxH6LtBf4FySzVOSC2Ff76xo23eqsWaYcVyye2UW1L2axo-hmok-d-OmSjoPerbmnyUDUzH1w7Xvh9Q=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Saturn Bar",
@@ -217,7 +304,7 @@
         "King James and the Special Men",
         "The Misfits"
       ],
-      "Category": "Bar / Music Venue",
+      "Category": "Bar",
       "Description": "Recommended for a specific Wednesday-night show by the band formerly known as King James and the Special Men, now called The Misfits; date-specific in original thread.",
       "Lat": 29.9694,
       "Long": -90.0366,
@@ -228,7 +315,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=9077753832987091199&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNfJalRTJR80YbajTiigBPZFhnnrzpsWaaTCdy7XDLbZLBZJXcW7LgjunCdfVhdtnqJfhtsXYVB0P-yAYaS99IJencZtHLCdih3S7KieJj0qtLq9HalFztH2dogtGAVz5Gsil2C851tzPWHYkw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Buffa’s",
@@ -237,7 +334,7 @@
         "Buffa's Bar & Restaurant"
       ],
       "Person": [],
-      "Category": "Bar / Pub",
+      "Category": "Bar",
       "Description": "Local pub and food spot recommended in the source thread.",
       "Lat": 29.9635,
       "Long": -90.0608,
@@ -248,7 +345,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=11658647155146251287&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOF0k8z-jOK3DGn26FoFqeV3oFkx7lEuSEUdMS43gqLXInPKCbll_0kEMoJ_5POYPEbfO2ooAf9zG2-Z4wNRRrjMVdC5sKdsCHm9ELtwLOHM9Ro5uC74u6Ad0mp20xC_Yy4_cIOzY6cw05Z=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Coop’s Place",
@@ -257,7 +364,7 @@
         "Coop's"
       ],
       "Person": [],
-      "Category": "Bar / Restaurant",
+      "Category": "Bar",
       "Description": "Mentioned as a spot for something stronger before wandering deeper into the Quarter.",
       "Lat": 29.9603,
       "Long": -90.0583,
@@ -268,7 +375,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=8647131582151577787&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOQOXdPtTvS-1-LqMiC7I70L44VhgqwdRfobnjXPdabbiNklLsSLNQ8F6QW56s-1GPe2HDPBcF9MMqTL6AB_buQ6yNEBGEMLueL8FnorTQquraOxXTxQs083OtIuUru37NfKRRUeE25bO7xdo4F9x90=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Pat O’Brien’s",
@@ -278,7 +395,7 @@
         "Pat O’Brien’s Piano Bar"
       ],
       "Person": [],
-      "Category": "Bar / Tourist Classic",
+      "Category": "Bar",
       "Description": "Go for Hurricanes, the courtyard, and especially the piano bar / singalong tourist classic.",
       "Lat": 29.9582,
       "Long": -90.0648,
@@ -289,7 +406,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=11400647078199388429&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqF9lE7sv81rd_xNXpJ1oZzpLo1oJvdZyUkCJN6hzJfvyXGRuZoNVUymBJ7oGIH5KLZZsmNA7-CZii0wChDp5I180sqro6sY7oI=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Creole Queen Historic Cruise",
@@ -299,7 +425,7 @@
         "Paddlewheeler Creole Queen"
       ],
       "Person": [],
-      "Category": "Boat / History Cruise",
+      "Category": "Tour",
       "Description": "Daytime historic cruise to Chalmette Battlefield; recommended over counting on riverboat dinner food.",
       "Lat": 29.9488,
       "Long": -90.0635,
@@ -310,7 +436,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Food",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=18026099338684330920&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNbsB53S1znPWtiS9h76cObwq7B1Im6s1jCfZdkxnr6dmDj_CXOpdG5wquqi92fHLM8CuPzC-AIMeHDd5UULapSWY-wvyUi8a7vPasIvHTI8ldfGqFhzqWrrNGP2Z7hiju8XuHjHVUg-EzdpD4JDVGkdA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Steamboat Natchez",
@@ -320,7 +457,7 @@
         "Steamboat Natchez"
       ],
       "Person": [],
-      "Category": "Boat / River Cruise",
+      "Category": "Tour",
       "Description": "Ride the Natchez for river views, river activity, city views from the water, and Dixieland-style jazz.",
       "Lat": 29.9547,
       "Long": -90.0636,
@@ -331,7 +468,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=17774183329925719086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEFZeQnNQP9o4p-x3T7HDEfz8acbF00srfUTg1hT2QlxKRzn01XcJFu9YzImuQZPZQ-viRdbZGjjEtAqMBde8u4S46JjeYHWRg=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Riverboat Sightseeing",
@@ -340,7 +487,7 @@
         "River cruise"
       ],
       "Person": [],
-      "Category": "Boat / Sightseeing",
+      "Category": "Tour",
       "Description": "Use riverboats for views, drinks, and sightseeing; do not rely on the dinner meal as the food highlight.",
       "Lat": 29.9505,
       "Long": -90.0634,
@@ -351,7 +498,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=11502856228591388756&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFHf9sM7uUoyPe1HoigPWxS1iWp2KVuibKTTgAwKNbxZ8lRIS0Eue4ILP9dRyYmhkr0i3RRDhUM6PGuT_nFmvaiJ9C9beB2vcg=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Café Beignet Bourbon Street",
@@ -361,7 +518,7 @@
         "Café Beignet on Bourbon"
       ],
       "Person": [],
-      "Category": "Cafe / Beignets",
+      "Category": "Cafe",
       "Description": "Alternative beignet stop, especially if Café du Monde has a long line.",
       "Lat": 29.9552,
       "Long": -90.0686,
@@ -372,7 +529,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Cafe",
+        "Food",
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=16450318784591580431&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGJIQ-inNrFQp79WGgs4PYulVAszwXABhPCuruAx4xtZ2Mou1h6EtEkSyJa2c4t4WcPZUXWC2OydWCXr63xFjn3rWgdxG3qYQ4=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Café du Monde City Park",
@@ -381,7 +549,7 @@
         "Cafe Du Monde City Park"
       ],
       "Person": [],
-      "Category": "Cafe / Beignets",
+      "Category": "Cafe",
       "Description": "Repeatedly recommended Café du Monde location, quieter and paired with City Park.",
       "Lat": 29.9856,
       "Long": -90.0951,
@@ -392,7 +560,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Cafe",
+        "Food",
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=5591511209995475126&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZO-mJjrVxSuDnzY7dJQjZjUXYJvHyuCxHHSTP7tUrASfapQmywJaS9ZA2g3vVdiDcF2o-7uC_Zsm8gU9mVhhzujzGfcwbB2trKWH5y_bi06r3nhCD26ZL-I8p233xLyoCLOnVqGqS2kZXh2Eg=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Café du Monde French Market",
@@ -402,7 +581,7 @@
         "Café Du Monde"
       ],
       "Person": [],
-      "Category": "Cafe / Beignets",
+      "Category": "Cafe",
       "Description": "Classic coffee-and-beignet stop; go late night, early morning, or use the to-go window to avoid a long line.",
       "Lat": 29.9576,
       "Long": -90.0618,
@@ -413,7 +592,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Cafe",
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=966301939576190711&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqHH920VuLLT4tDm1pjXQub99jc-xG5VSXYtDf6ZAKnK_EEPmYOVDG5KgMnnAOsw-P2MmMfYC7CDkfDzFT2TL3aBOjOVtnKHjW4=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Café du Monde Riverwalk",
@@ -422,7 +611,7 @@
         "Cafe Du Monde Riverwalk"
       ],
       "Person": [],
-      "Category": "Cafe / Beignets",
+      "Category": "Cafe",
       "Description": "Get beignets at the Riverwalk location and take them outside for the river view.",
       "Lat": 29.948,
       "Long": -90.0638,
@@ -433,7 +622,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Cafe",
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=3487181430581135568&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPMtPL3XJDGfb2NC2GIn2DAWu5UhyNqt77xg_tgu09nApVCRx6Dmv-RvmvNZTh4kymVyXV1q3N1uxqEEWnrpZ7vTZ-6ekFxYFDhHXrNf6EJ1E0qD2FQKC7T2SspfIq9HN5Nnq8LTmwqvfzngLy9RFHKuw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Pagoda Café",
@@ -442,7 +641,7 @@
         "Pagoda Cafe"
       ],
       "Person": [],
-      "Category": "Cafe / Brunch Alternative",
+      "Category": "Cafe",
       "Description": "Brunch/coffee alternative recommended over tourist-trap breakfast spots.",
       "Lat": 29.9745,
       "Long": -90.0746,
@@ -453,7 +652,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Cafe",
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=8704871764130636819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyMOyrVY2SNnhFedkxj37xjldXuLfVpponHGojQsDnMGpKQxpvQasF3C4sgJeEYkNsnoWvGMNznGy6aBF1-SIUsOm0hy4PNpFu5_X625J_FyxDLDs05VLD6Kr6yc4CmK_JCoTiztSWXb0LEA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Dat Dog Frenchmen",
@@ -462,7 +671,7 @@
         "Dat Dog"
       ],
       "Person": [],
-      "Category": "Casual Food / Late Night",
+      "Category": "Food",
       "Description": "Late-night snack after Frenchmen Street music.",
       "Lat": 29.9649,
       "Long": -90.0575,
@@ -473,7 +682,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=5076985053703371754&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNQ1VyWViDCc85p0Uka-fwzH9-46bijeBlmE4IeCget3vEjdUcfKcdTf5BMRPH0SijajuuCYcYnpigFFM2YVyZdTfoOJai6iBC_Am1R60l0y4JRZU6Hm3XHKMQs6h-p1msi5CiQvqjgJ49r48l4mtww=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Lafayette Cemetery No. 1",
@@ -482,7 +701,7 @@
         "Lafayette Cemetery"
       ],
       "Person": [],
-      "Category": "Cemetery / Architecture",
+      "Category": "History",
       "Description": "Visit if open while exploring the Garden District; check access status before planning around it.",
       "Lat": 29.9289,
       "Long": -90.0843,
@@ -493,7 +712,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=6479326464920155373&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOdIDPK-lfUXMv-fyPQul4B7I85Yb2ExLUMCpzHvcCHcRNCOSHOS1pNeUg2yMIV7APUXzT0HYMAIeWpC0TKwtNhG3tF92Mm_WTu8yU9AfMvr60VEzRHhOFfEpYVhzM_FFjUxuxS8SkHNi8ZdCK6gquSoA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": null
     },
     {
       "Name": "St. Louis Cemetery No. 1",
@@ -505,7 +733,7 @@
         "Marie Laveau",
         "Nicolas Cage"
       ],
-      "Category": "Cemetery / Haunted History",
+      "Category": "History",
       "Description": "Tour the famous above-ground cemetery; tickets/tour access required, with Marie Laveau and Nicolas Cage references.",
       "Lat": 29.9584,
       "Long": -90.0719,
@@ -516,7 +744,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "History",
+        "Tour"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=6678347799050244899&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFyhDr2au_YLzcM3ZmD42vazDLkp884Yw3Q1yeDxnLhDwbJaWWZe974WhRoAvEB7u05kUrYbmYNQB5Bl5womnwoxEM-_eGZcQM=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Lake Lawn Metairie Cemetery",
@@ -526,7 +764,7 @@
         "Metairie Cemetery"
       ],
       "Person": [],
-      "Category": "Cemetery / History",
+      "Category": "History",
       "Description": "Tour Lake Lawn Cemetery or wander cemeteries where legal and appropriate.",
       "Lat": 29.9864,
       "Long": -90.1132,
@@ -537,7 +775,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "History",
+        "Tour"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=3668968045284896255&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOq063yW9BTMF5XVIHHJvI2wlMvW4a-wmEMr6jCnKsEyN6XTOkEYr2PJk9uSyhJSZK64sAj4gQJk-kxt5HorXupOzybF7fI33YmpbZ5MAt_svBgRA_Ik3rDfWKxt5PE-SFmWMK37ZyW7nJbqkJg6Xtqdg=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "St. Louis Cathedral",
@@ -546,7 +794,7 @@
         "Cathedral-Basilica of Saint Louis King of France"
       ],
       "Person": [],
-      "Category": "Church / Landmark",
+      "Category": "History",
       "Description": "Visit the cathedral and nearby museums on each side while exploring Jackson Square.",
       "Lat": 29.9579,
       "Long": -90.0631,
@@ -557,14 +805,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "History",
+        "Museum",
+        "Landmark"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=3908456346550109614&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMR5e-Af_GvEnHJGBWgjOp0YYLis08u2hR7EFs0FExbBDN2rIBxHwJBr95dXxHl8yNgTLY55QTHuajR3UhZLf___1VuULghoVfOXmLd9N6fs5GRVpDQRMpb0kHO6WCfdg083l19qidXPjR9Rvo=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Cooking Classes",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Class / Food",
+      "Category": "Food",
       "Description": "Take cooking classes as an organized food/culture activity.",
       "Lat": 29.9511,
       "Long": -90.0715,
@@ -575,14 +834,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=11976884116172933112&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNoZlbm21xNiFja0GtXZ6E9fUlnyE_LyYmDNZV9q00ls_HR8x74ov0loJZee6MJubottzASksoO7k1nk-9dy3cDFzpN4D3BfetGXoHBTxBiBEXX4H-11IbsVilUv50vmcAtJD98H2GDdvuy5Q=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Rue de la Course",
       "Address": "1140 S Carrollton Ave, New Orleans, LA 70118",
       "Alias": [],
       "Person": [],
-      "Category": "Coffee",
+      "Category": "Cafe",
       "Description": "Stop for coffee during a St. Charles streetcar outing, then ride back downtown.",
       "Lat": 29.946,
       "Long": -90.133,
@@ -593,7 +861,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Cafe",
+        "Food",
+        "Transit"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=17084432933973912635&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJo9sdsehX7wckFbsb0RSc8U7nZjYSTC1ZVabeJGbwbjRY3hiEdcxaN8IYySOPADaptPrNFehtnRiQCpVgAjhjEklSagnhd5m-SE2-bAWNykUz_tdgyRuAoeFCo-HWXMeLTsyvN2msJ2pXbw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Mardi Gras Indians",
@@ -602,7 +881,7 @@
         "Black Masking Indians"
       ],
       "Person": [],
-      "Category": "Culture / Performance",
+      "Category": "Music",
       "Description": "Look for Mardi Gras Indian performances/processions during French Quarter Festival or other cultural events.",
       "Lat": 29.9584,
       "Long": -90.0644,
@@ -613,14 +892,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Music",
+        "Event"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=4471617594563912151&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGZfWf4CSUQJB7VFcjZoX33gNtmhRaQLq7eI2FHn6hiXwyjnD44rgZ1_LRMzzKHYSqqacoChhyWQJR3gIeYA80fHl5R076hl_I=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": null
     },
     {
       "Name": "Verti Marte",
       "Address": "1201 Royal St, New Orleans, LA 70116",
       "Alias": [],
       "Person": [],
-      "Category": "Deli / Late Night",
+      "Category": "Food",
       "Description": "Late-night deli repeatedly recommended, especially the All That Jazz po-boy and spicy muffuletta.",
       "Lat": 29.9625,
       "Long": -90.062,
@@ -631,7 +920,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=1650707284474479029&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGWCUF-RThs-QiWAt0Z9u8TBbya-JOHONS-SNlzlM9pH6B3WzTHByn-lwOiDFiBamMHQ_7DWEw6xEJelGkuxuKNQ4CmOCi0BlA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Camellia Grill",
@@ -640,7 +939,7 @@
         "The Camellia Grill"
       ],
       "Person": [],
-      "Category": "Diner / Classic",
+      "Category": "Food",
       "Description": "Get a chocolate freeze and an omelette.",
       "Lat": 29.9494,
       "Long": -90.132,
@@ -651,7 +950,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=1255076587724792265&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMUhOPBHeYZxp7glPApSrFwEPupuAcUHY7J2_XCA44Oha26AaZW7txGN6ijQhAFttlqhJl6AA0gcurXl9peEkGYt5sh55ZJpNsDBI2xmO4hbLafb39-UeevVM2nl_s8mzGvArYiQBERhK1MD9N-w6G2Pw=s4800-w599-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "District Donuts Sliders Brew",
@@ -660,7 +968,7 @@
         "District Donuts"
       ],
       "Person": [],
-      "Category": "Donuts / Quick Food",
+      "Category": "Cafe",
       "Description": "Good for donuts, sliders, and quick breakfast or lunch.",
       "Lat": 29.9287,
       "Long": -90.0763,
@@ -671,14 +979,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Cafe",
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=12425258723996920604&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEmTqDD9IHjnrgFPhAL9BRxHwgxTdUgexG-mX2Rpgdlm0IolvXHSFbP_zjNL3fb6Gb57IOQUzFaIOXzLTgAmatSUfz20p3sOi0=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Bloody Marys or Voodoo Daiquiris on Bourbon",
       "Address": "Bourbon St, New Orleans, LA",
       "Alias": [],
       "Person": [],
-      "Category": "Drink / Bourbon Street",
+      "Category": "Bar",
       "Description": "Day drink on Bourbon Street with bloody marys or voodoo daiquiris before the evening gets wild.",
       "Lat": 29.9585,
       "Long": -90.0668,
@@ -689,14 +1007,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=5389177584425181111&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEBdgCi3Qh6kMOL5nczOHWjKXfoZ8i9biwMlXre-M66aXYiVOlTDi7enpdziWRKYdGrHytu1f1yyGvIRGcYoG9i5QWGo-wAMrM=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Hand Grenade",
       "Address": "Bourbon St, New Orleans, LA",
       "Alias": [],
       "Person": [],
-      "Category": "Drink / Bourbon Street Classic",
+      "Category": "Bar",
       "Description": "Get a Hand Grenade if you want the unapologetically touristy Bourbon Street drink experience.",
       "Lat": 29.9585,
       "Long": -90.0668,
@@ -707,14 +1034,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=3160501903761257204&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOjI6xi2ekCMENocWdCyge5oTfpufhzCEpvyPRo-SbzDo6WZFGWTLtorv2w4J2UZEeCba9g-UQk0whQCyyVwkyEbYZNTxRqO5BU2JlK1mFmoBYL-X62MMp9pAExUBoH-TK6VAfMOjy2H0LgyQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Big Daiquiri",
       "Address": "Bourbon St, New Orleans, LA",
       "Alias": [],
       "Person": [],
-      "Category": "Drink / Tourist Classic",
+      "Category": "Bar",
       "Description": "Get a big daiquiri on a warm day.",
       "Lat": 29.9585,
       "Long": -90.0668,
@@ -725,14 +1061,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=818362775428063985&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPCkjFgaKHY1sJv8DOzWVxWVDpoogendCPM64C6bp3V8LrvEKGTzPnuO1_PYz8PJbe1DTDXgSbNH5yfV1gPlvooktG_RvP8KJxYg5rqGbmKEuOQZ2rEVNlYC-0o3uOCZYH1IIvQSAfUBJGU8IRQU62i=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Parades",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Event / Seasonal",
+      "Category": "Event",
       "Description": "Go to parades if any are happening during the visit.",
       "Lat": 29.9511,
       "Long": -90.0715,
@@ -743,7 +1088,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Event"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=3703139273228835451&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMO991VyCyJNCMcyAaDQ0mvgXWoIjGvMzvg9FSE5KboezM-DwR0a6TxJSWVCXHwuO3JHw6NW8GqiAIQ5tUSlU2O3Awms7l1m1B733vUDELzkisxqvx8qfWMeDWhyrXSKoBb8-5tjZmfhLl83g=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": null
     },
     {
       "Name": "French Quarter Festival",
@@ -752,7 +1106,7 @@
         "FQF"
       ],
       "Person": [],
-      "Category": "Festival / Seasonal Event",
+      "Category": "Event",
       "Description": "If visiting during French Quarter Festival, lean into stages, food vendors, brass bands, Mardi Gras Indians, funk, and traditional jazz rather than overbooking tours.",
       "Lat": 29.9584,
       "Long": -90.0644,
@@ -763,7 +1117,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Event",
+        "Music",
+        "Tour"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=2849078355492365403&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqE6GKbgG7aXGjlb-Fin5DCp2qlQDd8nLKeaQnQL0AFmkql93w_irbe2jUD7eO99WUFjLJBbqW66VlcRQljJ5T_tUTauZmS9SoA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "New Orleans Style Fishing Charters",
@@ -773,7 +1138,7 @@
         "Lafitte fishing charter"
       ],
       "Person": [],
-      "Category": "Fishing Charter / Outdoor",
+      "Category": "Tour",
       "Description": "Book a fishing charter down in Lafitte, especially for sunrise redfish fishing.",
       "Lat": 29.6669,
       "Long": -90.1087,
@@ -784,14 +1149,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=6561473730674033560&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqHarkOX00SZ2TRXfRx5iV_yvewhKOa_AV6cQ4s4ZnTZmbijhD8FG1v5XRCzxN0GlQC4rf7tNV-sgn1LZRBBW4dBVSpgSHi3qsM=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$$"
     },
     {
       "Name": "French Market Food Stands",
       "Address": "1008 N Peters St, New Orleans, LA 70116",
       "Alias": [],
       "Person": [],
-      "Category": "Food / Market",
+      "Category": "Activity",
       "Description": "Try piña colada and alligator sausage at the French Market area.",
       "Lat": 29.9589,
       "Long": -90.0594,
@@ -802,7 +1177,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Activity"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=860771894823217169&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNBwW3-V6jgzazszLBpzClqn2ZNo-mRrCbW__Mb8OaGdKy0NNqLXystpkfo3EBH75a2Q8965hOHqHmo09ocnIfggr_hav8fEQZstXR6oifTyLFma2-CtgMyD_f_15J2u19zW_qC4srk7HSGs-I=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Snowballs",
@@ -812,7 +1196,7 @@
         "Snow cones"
       ],
       "Person": [],
-      "Category": "Food / Seasonal Treat",
+      "Category": "Food",
       "Description": "Get New Orleans snowballs as a local warm-weather treat.",
       "Lat": 29.9511,
       "Long": -90.0715,
@@ -823,14 +1207,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=16370269763245443875&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOygdG6xWx5skvN-SN04V_TflUtZhIOk89rVQBTlKM0SY0zxtg_6m2lw7rbX0FLEXesmX0EqQNQpAaibO4rArcAGQAd2bfva7VA_0Yq5Q2ksCwBCHqRJ6S_ThyIRG6xvaDVtIF3KtKoBeJpwwBvS9LpUw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "The Prytania Bar Food",
       "Address": "3445 Prytania St, New Orleans, LA 70115",
       "Alias": [],
       "Person": [],
-      "Category": "Food at Bar",
+      "Category": "Bar",
       "Description": "Try Mexican-style dishes, red beans and rice, or wings while seeing music at The Prytania Bar.",
       "Lat": 29.9248,
       "Long": -90.0955,
@@ -841,7 +1234,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Food",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=5192231824846665801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZQrf1KgWiiVQZD47mu4HArqWPA2WesnL4FRCdZ97YB6k_nsDiPOyimBxDkmbkux0ZxH6LtBf4FySzVOSC2Ff76xo23eqsWaYcVyye2UW1L2axo-hmok-d-OmSjoPerbmnyUDUzH1w7Xvh9Q=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Chalmette Battlefield",
@@ -850,7 +1254,7 @@
         "Chalmette National Battlefield"
       ],
       "Person": [],
-      "Category": "Historic Site",
+      "Category": "History",
       "Description": "Visit the War of 1812 battlefield, especially via the Creole Queen historic cruise or paired with Rocky & Carlo’s.",
       "Lat": 29.9426,
       "Long": -89.9883,
@@ -861,7 +1265,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "History",
+        "Food",
+        "Tour"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=2698542014734610266&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOxSP0k3Av8BztzMs9Zc94xzXcjeuhn5vue1-DdUpwJha5d7Slt0W8lpUNnxp3h4HZmAvIgBIYaLwFuzN-VLsOqG08cf9pLRHV9hOQL7mEo3Mtv8Hm6sNouaPfW8biVlIbJAB2U8fAK5qm-19w=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "The Columns",
@@ -870,7 +1285,7 @@
         "Columns Hotel"
       ],
       "Person": [],
-      "Category": "Hotel Bar / Porch Drink",
+      "Category": "Bar",
       "Description": "Stop for a drink on the porch during or after a St. Charles streetcar ride.",
       "Lat": 29.9257,
       "Long": -90.0966,
@@ -881,14 +1296,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Transit"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=5329167742107503453&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqHUIgiuWdMZDGbVx6NQYgAXQ5YNjTjBoFxlLyw0w260-cHJkZA94IO2LQP9ZuCw2RCV09mqeDv0fwAcJnvlxr7JiW-1musrv1M=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Jackson Square",
       "Address": "701 Decatur St, New Orleans, LA 70116",
       "Alias": [],
       "Person": [],
-      "Category": "Landmark / Public Square",
+      "Category": "Landmark",
       "Description": "People-watch, see artists, listen to bands, and use it as a classic French Quarter sightseeing anchor.",
       "Lat": 29.9575,
       "Long": -90.063,
@@ -899,14 +1324,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Landmark",
+        "Art"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=16068572162069347983&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMiVefamXWB-GEaGVsEBF0WDemldZ9kgTbhAK8Ww9VCxjSOdouvUpn2yrrfj5AQQwCPRQcxec9e8zsIvFfsBw8wD7s_fe0iySN_8k0AZRPmD8PHfHvvEsMueSBwT2FzF1fkZ9rbwbz_bK2QdQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "French Market",
       "Address": "1008 N Peters St, New Orleans, LA 70116",
       "Alias": [],
       "Person": [],
-      "Category": "Market / Shopping",
+      "Category": "Shopping",
       "Description": "Walk toward the French Market for shopping and food, with the caveat that one commenter said it is not what it used to be.",
       "Lat": 29.9589,
       "Long": -90.0594,
@@ -917,7 +1352,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Shopping"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=860771894823217169&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNBwW3-V6jgzazszLBpzClqn2ZNo-mRrCbW__Mb8OaGdKy0NNqLXystpkfo3EBH75a2Q8965hOHqHmo09ocnIfggr_hav8fEQZstXR6oifTyLFma2-CtgMyD_f_15J2u19zW_qC4srk7HSGs-I=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "New Orleans Museum of Art",
@@ -926,7 +1370,7 @@
         "NOMA"
       ],
       "Person": [],
-      "Category": "Museum / Art",
+      "Category": "Museum",
       "Description": "Use NOMA as the anchor for the City Park sculpture garden and art-museum visit.",
       "Lat": 29.9866,
       "Long": -90.0934,
@@ -937,7 +1381,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Museum",
+        "Outdoor",
+        "Art"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=11319559526574597361&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZONGItcv5_6MQBdN-m_UHzge2EHDHnkTqtWbAvEfp-2HfVtN4Nbrh_fjF9-98f-yFdfPvBy35wHubjvdRivukWLR6w-fFmj_7I0FDr-Ac3VBcHBXbtL07xWZ_MBGjoQV93JvzXwQJxPhEGUlbU=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Ogden Museum of Southern Art",
@@ -946,7 +1401,7 @@
         "Ogden Museum"
       ],
       "Person": [],
-      "Category": "Museum / Art",
+      "Category": "Museum",
       "Description": "Visit the Ogden Museum for Southern art in the Arts/Warehouse District.",
       "Lat": 29.9437,
       "Long": -90.0708,
@@ -957,7 +1412,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Museum",
+        "Art"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=3527219327150764713&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPW5_QwraFw-wnwIGkga5dQme_47F74TnIYDDVU8t7B-RRxGa3z8NSLVPPDa7erKeepIAghNGO0Spn-rW1hejP_7vFlHRN_5tX_bSz47J9_TKysv9YXvCjd9YLcKaI5mngMUxq3d9zzebPkB6I=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Mardi Gras World",
@@ -966,7 +1431,7 @@
         "Blaine Kern's Mardi Gras World"
       ],
       "Person": [],
-      "Category": "Museum / Attraction",
+      "Category": "Museum",
       "Description": "Tour the float-building warehouse; one commenter suggested rideshare because parking can be expensive.",
       "Lat": 29.9352,
       "Long": -90.0615,
@@ -977,14 +1442,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Museum",
+        "Tour"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=5652819941356899726&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPuPFHBCLRxeHh5lXswFBuU5u6v3vEJy83KNpRKbzJ-_tugYU-To3eGYMylDd9ILg_wimCDBCtRGqehTRHV3DaSczcHWLyvL7guYk6PswTY8z7em6FwHRRejOhxcpRdNMkwYkhjooTWbZ1zdQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Sazerac House",
       "Address": "101 Magazine St, New Orleans, LA 70130",
       "Alias": [],
       "Person": [],
-      "Category": "Museum / Cocktail History",
+      "Category": "Museum",
       "Description": "Visit for cocktail history, self-guided exhibits, tastings, and Sazerac-related New Orleans lore.",
       "Lat": 29.9518,
       "Long": -90.067,
@@ -995,7 +1470,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Museum",
+        "Bar",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=14680543672243365080&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGUGa94ry6Yp8_9AXD7lQaR7_C2rFFCmsyOXEbUcIxkDR8XA3KvrWwI2EDoJd-AKHLgLZRFERk2Z_wTM2TjC9iG2Av3N9tVi7E=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Backstreet Cultural Museum",
@@ -1004,7 +1490,7 @@
       "Person": [
         "Sylvester Francis"
       ],
-      "Category": "Museum / Culture",
+      "Category": "Museum",
       "Description": "Small Tremé museum focused on Mardi Gras Indians, second lines, jazz funerals, and Black New Orleans cultural traditions.",
       "Lat": 29.9668,
       "Long": -90.0662,
@@ -1015,7 +1501,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Museum",
+        "Music",
+        "Event"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=16246788423244636891&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZO61GkmsP3Av70bNUCFX4KYrDd5qBBjAIDF3OGBnkImWqnKks0Kuw5GAwMJBK5HFoTT5UTf0kVva3LMZ2aTItlDqOCU8zJqh48jgX4zpg5mgv7Ow2sFIcbi-H7_wtRKhURfn4EHqEpXqeFNLg=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Audubon Insectarium",
@@ -1024,7 +1521,7 @@
         "Insectarium"
       ],
       "Person": [],
-      "Category": "Museum / Family Attraction",
+      "Category": "Museum",
       "Description": "Visit the Insectarium, often paired with the aquarium downtown.",
       "Lat": 29.9513,
       "Long": -90.0633,
@@ -1035,7 +1532,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Museum",
+        "Attraction"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=14399741160386849079&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGR4-pT5DoHj7i3kFArXDhkXQTBawEG5WUUhl9QgCahrzWVv2W4OpQcE_fBGI46ArGo2VrBaIOhA0da0UbtLn7DF41A-EW9mzo=s4800-w640-h315",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Historic New Orleans Collection",
@@ -1044,7 +1551,7 @@
         "HNOC"
       ],
       "Person": [],
-      "Category": "Museum / History",
+      "Category": "Museum",
       "Description": "Free French Quarter museum and research institution; rotating exhibits were specifically praised.",
       "Lat": 29.9577,
       "Long": -90.0661,
@@ -1055,7 +1562,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Museum",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=17649976526281075821&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFMmyNkN__3uEam937EUXtiYSAHVCY6HnMfBhRHcdOX7u0zvxGVm6fCfyzZvRJuTg-5O_evwvoxf6zIYkDTmWCBubCZbCmAoqo=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "The National WWII Museum",
@@ -1064,7 +1581,7 @@
         "National World War II Museum"
       ],
       "Person": [],
-      "Category": "Museum / History",
+      "Category": "Museum",
       "Description": "Major museum that commenters treated as a solid first-time New Orleans plan.",
       "Lat": 29.943,
       "Long": -90.0706,
@@ -1075,7 +1592,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Museum",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=9609115709056296554&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMriH5qUuLz0108wEd3KLUO9WwDcHdbOr84aGtSan2OQ2eRm76KbLPySLCFonwc6-y0OevGrWhCqR81Ij6KoOIXbFZqTq2xO5xS7JENFxwI6OWtmAVoyTc97Rr_JOLDvEuHPC4CGVW_NSYS4A=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Preservation Hall",
@@ -1084,7 +1611,7 @@
       "Person": [
         "Preservation Hall Jazz Band"
       ],
-      "Category": "Music / Jazz Venue",
+      "Category": "Music",
       "Description": "Classic traditional New Orleans jazz show; repeatedly described as a must / can’t-miss.",
       "Lat": 29.9583,
       "Long": -90.065,
@@ -1095,7 +1622,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=4079833995751315285&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNZYxZs-gyGNGFyd1SIspVnXRbDCu1-l9sQEilP8-r3J5ba3dZRG2MWNVi9N6LnL3OcKaVt5IE3gaRdRJlfWoKEWOq3vrUAyNgK2-Ti92OrBcK-OeaxXG2Bn0GL4bJyT9IbU_UNTnE-OYSNTA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": null
     },
     {
       "Name": "Snug Harbor Jazz Bistro",
@@ -1104,7 +1640,7 @@
         "Snug Harbor"
       ],
       "Person": [],
-      "Category": "Music / Jazz Venue",
+      "Category": "Music",
       "Description": "Sit-down jazz venue on Frenchmen Street.",
       "Lat": 29.965,
       "Long": -90.057,
@@ -1115,14 +1651,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=312865865260169488&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqF4S9OaZrgMp_5XmdknrZF-wtmHr7x3NKgXvSD_Xdp0ZnGFhqXpGk1-nM3ltAa3e8KSTC1k64lHwWevYkdKvHbji31XyKDxAYo=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Brass Bands",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Music / Performance",
+      "Category": "Music",
       "Description": "Seek out brass bands, especially during festival wandering and around the French Quarter.",
       "Lat": 29.9584,
       "Long": -90.0644,
@@ -1133,14 +1678,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Music",
+        "Event"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=1080122887258312462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNQDKspyRMgNDwurOa8WBdlnNXMmgQrGJd15TU4IhX2wMQ5hHIy5w1sSZHch1fsUmiPzNNM0JIXELBvV60z-xIZpwljF_fgqotWBCo1urMSxmdHccDdZbrBl172V1N14oKDHpo5-0lyH09SnPg=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": null
     },
     {
       "Name": "Jackson Square Street Bands",
       "Address": "701 Decatur St, New Orleans, LA 70116",
       "Alias": [],
       "Person": [],
-      "Category": "Music / Street Performance",
+      "Category": "Music",
       "Description": "Listen to bands playing around Jackson Square.",
       "Lat": 29.9575,
       "Long": -90.063,
@@ -1151,7 +1706,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Music",
+        "Landmark"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=16068572162069347983&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMiVefamXWB-GEaGVsEBF0WDemldZ9kgTbhAK8Ww9VCxjSOdouvUpn2yrrfj5AQQwCPRQcxec9e8zsIvFfsBw8wD7s_fe0iySN_8k0AZRPmD8PHfHvvEsMueSBwT2FzF1fkZ9rbwbz_bK2QdQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Bywater",
@@ -1160,7 +1725,7 @@
         "The Bywater"
       ],
       "Person": [],
-      "Category": "Neighborhood / Area",
+      "Category": "Neighborhood",
       "Description": "Explore the Bywater as a neighborhood beyond the French Quarter, with colorful streets, bars, and restaurants.",
       "Lat": 29.9664,
       "Long": -90.0368,
@@ -1171,7 +1736,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Neighborhood"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=5384889756277933711&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTNAuQWw7aJknaw3tPrcRrCnTdqkcXFzZDMei-MZD8D05NZuSjNKr3G6orUsesotn30cqFLuffEaDUHOspnPXsFOa4qr71AVoxC8wF8JIHX3SY7uchYpN-OfD3tQS3iMlk5Jv2p5qOpyhgyO0=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Faubourg Marigny",
@@ -1180,7 +1754,7 @@
         "Marigny"
       ],
       "Person": [],
-      "Category": "Neighborhood / Area",
+      "Category": "Neighborhood",
       "Description": "Explore the Marigny, especially around Frenchmen Street, for nightlife, bars, music, and local-feeling wandering.",
       "Lat": 29.9651,
       "Long": -90.0525,
@@ -1191,7 +1765,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Neighborhood",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=14230911718205322697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMTS3RYY0mFc7YstA91foUgyaHHgxvv83NGL0x680kQSV-7tE13M87Xd5QMhgyO4_PJVMvDbisQTDKiZ3-oqW2tOQJhMc5g9_U6HDzMZJjO6rYfQLz6S8c5k4fQtPSHHNH0zsZkrELyXJIx0KE=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "French Quarter",
@@ -1200,7 +1784,7 @@
         "Vieux Carré"
       ],
       "Person": [],
-      "Category": "Neighborhood / Area",
+      "Category": "Neighborhood",
       "Description": "Walk the French Quarter slowly, read plaques, people-watch, see street musicians, and use it as the classic first-time New Orleans base.",
       "Lat": 29.9584,
       "Long": -90.0644,
@@ -1211,14 +1795,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Neighborhood"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=11006018750480785978&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPVaSvFGoFLNyWr3XI1Ryxnxz-GjyOpQ6obtPiqDHLC8628k3OIIk48AsACU7pZt2i_lzrfIInUQ6eMDOWyyUrRP-lDZ7iVm16YQPVxm4c2O904QIFNRde5trczER0BUeLzOwC5Xn5hk7EwJQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Garden District",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Neighborhood / Area",
+      "Category": "Neighborhood",
       "Description": "Walk or take an architecture tour through the Garden District for mansions, trees, and a calmer pace.",
       "Lat": 29.9299,
       "Long": -90.084,
@@ -1229,7 +1822,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Neighborhood",
+        "Tour",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=6524848579661590352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZP9P0L00HfJisDQiqGxmCGWs8JyHibvmQ9dTX9CFbTZc5_GJ9ojYC2-CSFbb5aVjof675PlZg3grcWPWYKZRfSl0D00f0po9igjYSdPWVdktCl9Ymv8ZTs7QHK8OeIlA2uX6wc2dRif7VLd8A=s4800-w606-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Treme",
@@ -1238,7 +1842,7 @@
         "Tremé"
       ],
       "Person": [],
-      "Category": "Neighborhood / Area",
+      "Category": "Neighborhood",
       "Description": "Visit Tremé for New Orleans history, Black cultural traditions, music history, and the Backstreet Cultural Museum.",
       "Lat": 29.967,
       "Long": -90.0715,
@@ -1249,14 +1853,26 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Neighborhood",
+        "Music",
+        "Museum",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=7268666061874207642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZP7k6cU-fZ5Um43g-9DBfvjisnqheLkRZ4q4ixQjdhHAVRdAVRgL8ExxjAGqKX7k6TGcDBmwavKBH1ULkz5BJNNLhXY5fQUUALNq56g67yB_NeEnjAhkkpwLx_LpDAcYb4TQn89x9X4qAj-=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Uptown",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Neighborhood / Area",
+      "Category": "Neighborhood",
       "Description": "Ride or walk through Uptown for oak-lined streets, architecture, and a less tourist-dense view of the city.",
       "Lat": 29.9416,
       "Long": -90.112,
@@ -1267,7 +1883,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Neighborhood",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=14409103264120470500&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPFeCMMJch1n2yMR77OR1cnuRv7WRZLSEIcEEnuAkd1N9o8Au_u454ifXFxEzoe7k7_WucOlkjQeC6JSxd97wOu-f9ve7mQgkv5rwKVNnZGKsdg8RZLT5u7Ct8ka_3N1aSRM__kKpwtr9Skug=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Algiers Point",
@@ -1276,7 +1902,7 @@
         "Algiers"
       ],
       "Person": [],
-      "Category": "Neighborhood / Ferry Destination",
+      "Category": "Neighborhood",
       "Description": "Take the ferry across the Mississippi to Algiers Point, have a drink, enjoy the view, and return by ferry.",
       "Lat": 29.9522,
       "Long": -90.0511,
@@ -1287,14 +1913,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Neighborhood",
+        "Bar",
+        "Transit"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=13909047517535724438&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZONpKdKr8vpAZAB1QJND6dJlIsHNAH0bdw9GGb4xOoLnQSj63sjQ6RUQznwV58m67kUuSiaEDUxLkr4a8HVUTRJ1lRRUP1VeDq4NBSp44SCFUidU0KOgR6uM8wElqFyq9Ef28S2SMhNnCIebg=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Bayou St. John",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Neighborhood / Outdoor Area",
+      "Category": "Neighborhood",
       "Description": "Explore Bayou St. John as a worthwhile area beyond the Quarter.",
       "Lat": 29.9813,
       "Long": -90.0845,
@@ -1305,7 +1942,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Neighborhood",
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=3246880935453692078&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMnurDjJYKxTdlQ19oMk843Pe8RPiiVH6vVivw43t4wdBSV5DBUHNs9LLaaZNGB7e7P74Bp_Ph0sBZSf4BGPKulY27nSsSEKqu8zEsrwXMRQHkt5jbWn9feIk-vuanI7qqO1qfKseYdOD9St5E=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Frenchmen Art Bazaar",
@@ -1315,7 +1962,7 @@
         "Palace Market"
       ],
       "Person": [],
-      "Category": "Night Market / Art",
+      "Category": "Art",
       "Description": "Check out the large outdoor night art market near Frenchmen Street, reportedly open late.",
       "Lat": 29.965,
       "Long": -90.0571,
@@ -1326,7 +1973,19 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Art",
+        "Music",
+        "Outdoor",
+        "Shopping"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=13925466055750955029&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqHtWYw85glyxK__cYgdoHL0c1Bgo7nJ1Xx3UpVxui-eRchEFO_Tt1lXRTmpcQFw5eI_WSWWtWrlIoVaVl7K6GYI-yEbhZuoPvk=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Vue Orleans",
@@ -1335,7 +1994,7 @@
         "Vue Orleans Observatory"
       ],
       "Person": [],
-      "Category": "Observation Deck / Culture",
+      "Category": "Outdoor",
       "Description": "Indoor/outdoor observatory and cultural attraction with views over New Orleans and the river.",
       "Lat": 29.9507,
       "Long": -90.0635,
@@ -1346,14 +2005,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Outdoor",
+        "Landmark",
+        "Attraction"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=14129539875453879184&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqG18NoaWOLy1N2Tam9nGL-S1F9880026egFJT-tMnO-EHnNjOKtyFscYUMsDKyG3RoXeTQ3nxdx0BY8NRAc213QS7XLT6Zbzx4=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Bike Riding Around New Orleans",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Outdoor / Active",
+      "Category": "Outdoor",
       "Description": "Ride bikes around the city as an active way to explore neighborhoods.",
       "Lat": 29.9511,
       "Long": -90.0715,
@@ -1364,14 +2034,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Outdoor",
+        "Neighborhood"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=664667278569279601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGedAnoEE29mQD5bUCXVBJNzL4fB9q5uQZozKlP0sU58iIF2pnrqSNCXcdj4qzeYVvy-iOl_91EOe2ciSsUvnx-k08OxhxLxKs=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "City Park",
       "Address": "1 Palm Dr, New Orleans, LA 70124",
       "Alias": [],
       "Person": [],
-      "Category": "Park / Outdoor",
+      "Category": "Outdoor",
       "Description": "Visit City Park for oak trees, walking, sculpture garden, museums, and the quieter Café du Monde location.",
       "Lat": 30.0017,
       "Long": -90.0928,
@@ -1382,14 +2062,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Outdoor",
+        "Museum",
+        "Art"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=15617644366039413908&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNcmN1zeH8yvePUt5OG8qdczv53-ZLfzDX1Iv3381OfBOe9bGynd-T6ecv9idZHw446k-3y9a5fiawo8hplCwV7PdL6HZJEbHLv6b3gYud0Z9n31aJKNt5gO7y7dUWmHOgOh8tG0H18TtmNI4JGhJU=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Whitney Plantation",
       "Address": "5099 LA-18, Edgard, LA 70049",
       "Alias": [],
       "Person": [],
-      "Category": "Plantation / History",
+      "Category": "History",
       "Description": "Educational and raw history tour centered on slavery and plantation history.",
       "Lat": 29.981,
       "Long": -90.779,
@@ -1400,7 +2091,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "History",
+        "Tour"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=10163907364140691841&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPe4idQ5lrCPkDhHgETlKcs-JieC-n9OZdohOF1ZWQPo_682K68Xz9OugqkYoE3fi1rUtUjNrTFzRMIMZYrtmvu6yYL0u0FbHZrCkp0G1JIlEg9yXp_s4v3HmEnLlSDlgjkum8Kir2yUqKragU=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$$"
     },
     {
       "Name": "NOLA Poboys",
@@ -1409,7 +2110,7 @@
         "NOLA Po-Boys"
       ],
       "Person": [],
-      "Category": "Po-boy Shop",
+      "Category": "Food",
       "Description": "French Quarter shrimp po-boy recommendation.",
       "Lat": 29.9605,
       "Long": -90.064,
@@ -1420,7 +2121,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=11669798338813802040&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFmk4JhOQ5TRrfoxQpnLNxBOQ6z4mbBWm2wEqhUU1yps8DUOKWY4bu99_ltzxal0NtDdR4RhMyWYcgJbsvT5fcFRGgyCrPdAtw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Parkway Bakery & Tavern",
@@ -1429,7 +2139,7 @@
         "Parkway"
       ],
       "Person": [],
-      "Category": "Po-boy Shop",
+      "Category": "Food",
       "Description": "Get a fried shrimp po-boy.",
       "Lat": 29.9822,
       "Long": -90.0908,
@@ -1440,7 +2150,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=2486055442361409561&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEgKMIiKMNl1EQG2HkSBGKHQvHoMrFR-ObofZS50Uv9PcYD2-peTfR65OKfbWxGLCX-zapwsjeYHuIKS_fWEoqXDHXa0-T5UvQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Ask Tour Guides and Servers for Recommendations",
@@ -1458,7 +2177,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Practical Tip",
+        "Tour"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=14256866797264267121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFw45A4KCbOx9VY3Ua0nbFZKkcoLUzvnVvKwQJ9jch17F5nRYtJG8OqYnogLm0RGCjHzLfib8NAbI2t2ZnoqS969hps4GqckRU=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Avoid T-Shirt Shops and Bad Bourbon Street Music",
@@ -1476,14 +2205,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Practical Tip",
+        "Bar",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=16196537138029147893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOWYbrCSayLfrDAg_M3PyCAsK_psEbbTkgxsirp9k2ezpS3gsbfN3AwVeh4LloomeC-SaCy0Os8EZqyYVWpl0g0qHMyzNUGFW_7yvO96HjYBjn1t7Q6XEN1f9JA4dhUktgN7nO7IpB2eX5lrpvDmt6gJw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Avoid Obvious Tourist-Trap Breakfast Spots",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Practical Tip / Food Strategy",
+      "Category": "Practical Tip",
       "Description": "Be wary of obvious French Quarter tourist-trap breakfast spots; commenters specifically criticized Café Fleur De-Lis.",
       "Lat": null,
       "Long": null,
@@ -1494,14 +2234,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Practical Tip"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=17206744602484348977&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqHcRngPPyl3a6pMKGhILlBCPkjUQxewUEoPnTnacC66r4AEbt_plHgrnXwAtLwfQL9R_ffWOLOFtSDfr8q9viDt9JgPI97-0nQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Avoid Riverboat Dinner as Main Meal",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Practical Tip / Food Strategy",
+      "Category": "Bar",
       "Description": "Several commenters suggested using riverboats for sightseeing or drinks, then eating dinner somewhere better.",
       "Lat": null,
       "Long": null,
@@ -1512,14 +2261,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Practical Tip"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=17774183329925719086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEFZeQnNQP9o4p-x3T7HDEfz8acbF00srfUTg1hT2QlxKRzn01XcJFu9YzImuQZPZQ-viRdbZGjjEtAqMBde8u4S46JjeYHWRg=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Make Dinner Reservations Early",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Practical Tip / Food Strategy",
+      "Category": "Food",
       "Description": "Make reservations as soon as possible for nicer restaurants, especially Commander’s Palace and Atchafalaya brunch.",
       "Lat": null,
       "Long": null,
@@ -1530,14 +2289,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food",
+        "Practical Tip"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=3406936756541501962&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFhTWCLC31WF5lYjgGlAK14drPAIfSqTkK2VVc_xqAO3FUfWCzfR9tmVaeOiSgd4oGC8gI0RvzE000_naF8mPy0tnXlvEo8Rxk=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$$"
     },
     {
       "Name": "Use Café du Monde To-Go Window",
       "Address": "800 Decatur St, New Orleans, LA 70116",
       "Alias": [],
       "Person": [],
-      "Category": "Practical Tip / Food Strategy",
+      "Category": "Practical Tip",
       "Description": "At Café du Monde, use the to-go window or alternate locations when the main line is long.",
       "Lat": 29.9576,
       "Long": -90.0618,
@@ -1548,14 +2317,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Practical Tip"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=966301939576190711&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqHH920VuLLT4tDm1pjXQub99jc-xG5VSXYtDf6ZAKnK_EEPmYOVDG5KgMnnAOsw-P2MmMfYC7CDkfDzFT2TL3aBOjOVtnKHjW4=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Do Not Overbook During French Quarter Festival",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Practical Tip / Scheduling",
+      "Category": "Practical Tip",
       "Description": "If visiting during French Quarter Festival, avoid packing the schedule with tours because crowds and stages change the Quarter’s normal flow.",
       "Lat": null,
       "Long": null,
@@ -1566,14 +2344,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Practical Tip",
+        "Tour",
+        "Event"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Do%20Not%20Overbook%20During%20French%20Quarter%20Festival%20New%20Orleans%20LA",
+      "ThumbnailUrl": null,
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Respect Streetcar Commuters",
       "Address": "St. Charles Ave & Canal St, New Orleans, LA 70130",
       "Alias": [],
       "Person": [],
-      "Category": "Practical Tip / Transit",
+      "Category": "Transit",
       "Description": "Remember the St. Charles streetcar is also real transportation for locals; avoid treating rush-hour cars like a private tourist ride.",
       "Lat": 29.9525,
       "Long": -90.07,
@@ -1584,14 +2373,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Transit",
+        "Practical Tip"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=13883159280798199841&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOJhkQATBv3ycazUt19DxbX6bgw9cFgwZ8-AgydkrPTU1581CFKAceOOoPwNnlDOICdkkWbx1VKHGjiZMddzFeRJ6lQwQ6RmgOseRHwgsagVFbDzK6mcSu1ZCSE_QKWashPUBjVf70mvi3b2A=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Atchafalaya",
       "Address": "901 Louisiana Ave, New Orleans, LA 70115",
       "Alias": [],
       "Person": [],
-      "Category": "Restaurant / Brunch",
+      "Category": "Food",
       "Description": "Make a reservation, especially for brunch; if booked, try bar seating or dinner.",
       "Lat": 29.9244,
       "Long": -90.0933,
@@ -1602,7 +2401,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food",
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=3874592503318491410&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMGYU_vNSdh9lukY1s0b3PH8KvwZIaMJkjx8ITrH-HQQtLbGs-seUxtQYhhbvUx9mvLmV0BesHbP1i_JbSFcVs9zCkeqh4FbDnSGcurthGme2BRrf4DglkVUMLYkhi_UVT31kPFcEPdny-F3CI=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Alma Cafe",
@@ -1611,7 +2420,7 @@
         "Alma"
       ],
       "Person": [],
-      "Category": "Restaurant / Brunch Alternative",
+      "Category": "Food",
       "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
       "Lat": 29.9661,
       "Long": -90.032,
@@ -1622,7 +2431,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food",
+        "Cafe"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=10593463845089026151&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZP41ncZRwgHuQcWtT3BGh15TFBosW_uRMZ5hEqhcYGMBWOcK0QUOurxUA2kIZx5wZrjkgRvned8f5sgXCnKpeTSsK1LmLnIlP4UjChFjFrkPl9C1ipd3KD4UF2muIYfozMZdSVWHZozUYYcbw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Bearcat CBD",
@@ -1631,7 +2450,7 @@
         "Bearcat"
       ],
       "Person": [],
-      "Category": "Restaurant / Brunch Alternative",
+      "Category": "Food",
       "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
       "Lat": 29.9454,
       "Long": -90.074,
@@ -1642,7 +2461,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=6172636228299351789&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEgxCQyM8iaukV-GNRWW2lDOyCBhCn6_F--RJnwBWoDB07Mowu8g1pBchH-fZKau93U3KmXjEhZ664pifzv2n1wmV9boVnpSDQ=s4800-w560-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Elizabeth’s",
@@ -1651,7 +2479,7 @@
         "Elizabeth's Restaurant"
       ],
       "Person": [],
-      "Category": "Restaurant / Brunch Alternative",
+      "Category": "Food",
       "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
       "Lat": 29.9635,
       "Long": -90.0432,
@@ -1662,7 +2490,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=12897706763894784660&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZN2H7jSTcVq1lWPDM9PEYRRy5onNM1yN5_uahxNssHaGPl9ONAG8Pvnh5EnbVWciOlRN6f-YbTIHmjyxspZTlWF3SAW5x4H6pwfUweJTEwvyLdhK6GvzzhnSGPp0O3etVjhsBVZBO-Mk4M1FzA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Molly’s Rise and Shine",
@@ -1671,7 +2508,7 @@
         "Molly's Rise & Shine"
       ],
       "Person": [],
-      "Category": "Restaurant / Brunch Alternative",
+      "Category": "Food",
       "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
       "Lat": 29.9274,
       "Long": -90.0779,
@@ -1682,7 +2519,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=550412240726827616&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMM0FU2ncrrF2uV8bRT5DoiqdoVp3er6zKr0YOfKA_QuCi6_ZXcwFEyqDAmVxQYa_t8KHdJ6qpOa8lorJNphrlTiWCe_X4CL4Abcp2vwOpJ8JeQS41iWAPL5WaeMh7591RWem3Tkwk_yBExkmo=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Satsuma Cafe",
@@ -1691,7 +2537,7 @@
         "Satsuma"
       ],
       "Person": [],
-      "Category": "Restaurant / Brunch Alternative",
+      "Category": "Food",
       "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
       "Lat": 29.9633,
       "Long": -90.0396,
@@ -1702,7 +2548,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food",
+        "Cafe"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=1611343632918829027&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGp-tHiulaho5VS_SMxPrNdVhw-94Ftzi8Day8VCtD6ZnDnzFNTMUD-74X3fTw0No_62LQ02oULB2UPJXwzzqjybP1KA35Do4U=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Surrey’s Café & Juice Bar",
@@ -1711,7 +2567,7 @@
         "Surrey's"
       ],
       "Person": [],
-      "Category": "Restaurant / Brunch Alternative",
+      "Category": "Food",
       "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
       "Lat": 29.934,
       "Long": -90.0715,
@@ -1722,14 +2578,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food",
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=8622020647112248649&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPzdf2uGAYNvyV3SkvR1vAKQx9wwHiuX8Ii_XnAIACahMZCO505gOcZMYKWZ7qAEXWHoyB6Xs1G9FLxo9oLO4kpQTHNV_ZAxxUXgNClWhaEj_aVSQbogQTOs5KKh5gvSnnzOQ8m6GDwW4P5vw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Toast",
       "Address": "5433 Laurel St, New Orleans, LA 70115",
       "Alias": [],
       "Person": [],
-      "Category": "Restaurant / Brunch Alternative",
+      "Category": "Food",
       "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
       "Lat": 29.9227,
       "Long": -90.1152,
@@ -1740,7 +2606,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=16094941710321516818&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEfe9cu7HB7CH_8A9hjxeYCXIrgdzHGFHBKhLAOXo84DsRmT9u5TQNc4IRZ6_MTN30raboDPTzyOd6WAFmc2n0O5cH3TX3Au20=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Up & Adam Eatz",
@@ -1750,7 +2625,7 @@
         "Up & Adam Eats"
       ],
       "Person": [],
-      "Category": "Restaurant / Brunch Alternative",
+      "Category": "Food",
       "Description": "Brunch alternative recommended over tourist-trap breakfast spots.",
       "Lat": 29.9779,
       "Long": -90.1069,
@@ -1761,14 +2636,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=13875461228494851117&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEnuBGEjZsplH7trqfDGEM1yfbQiilxKA-oRCuwcrZ3iFHrKlOKNW_7OF6jCA4zSjh0RfCLTMrdJSdnIm4gDLwEgE0yxqHaNyM=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Port of Call",
       "Address": "838 Esplanade Ave, New Orleans, LA 70116",
       "Alias": [],
       "Person": [],
-      "Category": "Restaurant / Burger Bar",
+      "Category": "Bar",
       "Description": "Get a Monsoon and burger.",
       "Lat": 29.9641,
       "Long": -90.0616,
@@ -1779,7 +2663,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=11860370603825052258&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMEL-rjqkNVebxBTsPA8yqpi_68TxS9i5Jr55_OKDWEGDt8MM6yu_UWdJN3_vcybyhAQCC5KcWEbFk9Vff0G8I7S8_oQ6evapDQF_k821hrKqn-ppRnbDxeIWOmZwK-NPK2b11jG-ZL9a7VHhU=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Katy’s",
@@ -1788,7 +2682,7 @@
         "Katy's Restaurant"
       ],
       "Person": [],
-      "Category": "Restaurant / Casual",
+      "Category": "Food",
       "Description": "Mentioned by a first-time visitor as close by and tasty.",
       "Lat": 29.9753,
       "Long": -90.104,
@@ -1799,7 +2693,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=4819478599935675905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZODdr526h0bxFVbmFBRurzcW9ErNpsENbSYJVoeWEtM2OGl9_tVOiQxvTsJg18cY0GkfZp-Lffmio_He-M-PkXMhpTmKMBr9H2PHv_96K-k_9SWxTMeOVXHuBzax-dXtL-AeRzGLS2QS4RxjG8=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Rocky & Carlo’s",
@@ -1808,7 +2711,7 @@
         "Rocky and Carlo's"
       ],
       "Person": [],
-      "Category": "Restaurant / Casual",
+      "Category": "Food",
       "Description": "Go for mac and cheese, especially if pairing with Chalmette Battlefield.",
       "Lat": 29.9425,
       "Long": -89.9666,
@@ -1819,14 +2722,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=8836462914847865481&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEZTmiz4R3mK3qWr_cDLNGsy-Uw4cd6c6J0UjNqsmiSy2Di4pxpbvmBsZcqk1dvh7xcn8YTrYuQMw0EymC_cqKPdmIZ2EQSo2E=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Gumbo Shop",
       "Address": "630 St Peter, New Orleans, LA 70116",
       "Alias": [],
       "Person": [],
-      "Category": "Restaurant / Creole",
+      "Category": "Food",
       "Description": "Recommended for lunch in the French Quarter.",
       "Lat": 29.9577,
       "Long": -90.0655,
@@ -1837,14 +2749,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=1346846763281016242&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNC2qGuMNXZkZdv5stFE9jPRJ7lMxIai4mlEhszcHZ4GVPrYJeJcBZRY4XBj_ffpwG13IcAsYFM_uIvjauzDaGsAWcqvEIls9abDK7YUUVr45JHUOwBClFUnCKewbxkP9_jwPGHB5CPxDV-=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Commander’s Palace",
       "Address": "1403 Washington Ave, New Orleans, LA 70130",
       "Alias": [],
       "Person": [],
-      "Category": "Restaurant / Creole Fine Dining",
+      "Category": "Food",
       "Description": "Classic Garden District restaurant recommended for brunch or dinner; dress up and make reservations.",
       "Lat": 29.9289,
       "Long": -90.0842,
@@ -1855,7 +2776,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=5204633771439876795&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNaUn67_jr1gd9eWiTa7GOS4ubdMZf-Fr0Oijmjd4bVJP6LJzSLfUEwy5kd18ulj4P_GbLSdMWMo4THerORununejDeUar1nyN4dHFLwEzfkSw9eNW75ikS20BpU2uqoMo1SkYSxzRXCiggAA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$$"
     },
     {
       "Name": "Café Fleur De-Lis",
@@ -1864,7 +2794,7 @@
         "Cafe Fleur De Lis"
       ],
       "Person": [],
-      "Category": "Restaurant / Criticized",
+      "Category": "Food",
       "Description": "Mentioned because the OP had heard it was a must, but commenters criticized it as a tourist trap.",
       "Lat": 29.9553,
       "Long": -90.0668,
@@ -1875,7 +2805,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=17206744602484348977&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqHcRngPPyl3a6pMKGhILlBCPkjUQxewUEoPnTnacC66r4AEbt_plHgrnXwAtLwfQL9R_ffWOLOFtSDfr8q9viDt9JgPI97-0nQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Adolfo’s",
@@ -1884,7 +2823,7 @@
         "Adolfo's Restaurant"
       ],
       "Person": [],
-      "Category": "Restaurant / Frenchmen Street",
+      "Category": "Food",
       "Description": "Frenchmen Street dinner spot; one commenter noted no reservations.",
       "Lat": 29.965,
       "Long": -90.0573,
@@ -1895,7 +2834,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=867852733516984097&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEljkmvZ5II29dejvygskwyz86OzNR-TRhmah75K6iUUnWQo8cdLd-UP6XHcOSkIYdwY_k9PZ17MeWO8cZWTsDgLisMmVyCuB4=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Willie Mae’s",
@@ -1904,7 +2853,7 @@
         "Willie Mae's Scotch House"
       ],
       "Person": [],
-      "Category": "Restaurant / Fried Chicken",
+      "Category": "Food",
       "Description": "Fried chicken recommendation, with a warning that waits can be long and piece choice may be limited.",
       "Lat": 29.9717,
       "Long": -90.0807,
@@ -1915,7 +2864,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=14614715915410291461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPepjjpJ0kV3DSE97BuPS-dYQQjtSiwQZ2Z1QlobkgBMRGPt4BMXWAl-yw3OyXxN7Qrr3Z6Oy3GamRjNqVE7dIRBGtfMmMC22KwFTgnJtTZYB_3pZzrRMFTEXP-MVjVAeJK7eQ9ILzjAzgFBAARu2cXfQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Muriel’s Jackson Square Ghost Table",
@@ -1924,7 +2882,7 @@
         "Muriel's"
       ],
       "Person": [],
-      "Category": "Restaurant / Haunted Lore",
+      "Category": "Food",
       "Description": "Check out Muriel’s ghost table if doing ghost-tour material around Jackson Square.",
       "Lat": 29.9583,
       "Long": -90.0634,
@@ -1935,14 +2893,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food",
+        "Tour",
+        "Landmark"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=10215526720797373261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEyQymMdb0Z_RD5THH2OQaYxiI_p8_OF7h2m3PCbZAlQxcOmVzu2yuu2Y0pGM6opaZJfGFwvjBn8rxJVOO7LfHOExM8Aw5XVXw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Napoleon House",
       "Address": "500 Chartres St, New Orleans, LA 70130",
       "Alias": [],
       "Person": [],
-      "Category": "Restaurant / Historic Bar",
+      "Category": "Bar",
       "Description": "Order a quarter muffuletta and Pimm’s Cup in a historic French Quarter setting.",
       "Lat": 29.9574,
       "Long": -90.0652,
@@ -1953,14 +2922,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar",
+        "Food",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=4257322152894798140&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqHLVtSW_IG0MO6RmnE0b5YSkuXG4R7ZoXsKViT7SixcDbTweQ5qBdQ6gpauZ7bJKC850RMXDk5YDQInxXmj9WzKbowJMbfZIw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Bourbon House",
       "Address": "144 Bourbon St, New Orleans, LA 70130",
       "Alias": [],
       "Person": [],
-      "Category": "Restaurant / Seafood",
+      "Category": "Food",
       "Description": "Go for charred oysters.",
       "Lat": 29.954,
       "Long": -90.0688,
@@ -1971,7 +2951,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=11554767571130254419&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqF-OUEoZyuFzVN0wwl8IOFO2Jir4tDT9vMqSYeKKL2Z19I-upjIqJ3Pl-rgwmjNplcmEGhCL7uRsmAm3cZapnZnc1a-vvvA98A=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "GW Fins",
@@ -1980,7 +2969,7 @@
         "G.W. Fins"
       ],
       "Person": [],
-      "Category": "Restaurant / Seafood",
+      "Category": "Food",
       "Description": "Recommended as a favorite fancy dinner.",
       "Lat": 29.9557,
       "Long": -90.0681,
@@ -1991,7 +2980,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=1930158316525905472&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGNLgAWzINLntK_QL-i3L-LKdvCAl_hDsU_WVI1cZFz6alSzHyjieX3cs4IE95TnLpY_0-lgo37lFeL59C2HLf3upsIS1M5Hik=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Woldenberg Park",
@@ -2000,7 +2998,7 @@
         "Woldenberg Riverfront Park"
       ],
       "Person": [],
-      "Category": "Riverfront Park",
+      "Category": "Outdoor",
       "Description": "Walk the riverfront and expect crowds around Woldenberg Park during French Quarter Festival.",
       "Lat": 29.9509,
       "Long": -90.0634,
@@ -2011,7 +3009,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Outdoor",
+        "Event"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=15777702491284566990&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPM3LtiDXLunfmnz1qqmfvcQiB1EVwErBhKX1YlVlFqi3yByo1-aZhdUP18J6YJeF1w9a6g9PRL8wO-NVDD8ljWP16AFQAskfjz-lrde3blccFptx5tBa1Qxclc8TuKc-5V591M9rPlQ4tHeg=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Hot Tin",
@@ -2020,7 +3028,7 @@
         "Hot Tin Rooftop Bar"
       ],
       "Person": [],
-      "Category": "Rooftop Bar",
+      "Category": "Bar",
       "Description": "Rooftop bar recommended at night for skyline views.",
       "Lat": 29.936,
       "Long": -90.079,
@@ -2031,7 +3039,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=14560277500923567189&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEr0uRgLfxXLvzm0p4VfUdwtd-WmNVz6CqAgNyzeVTuOsWfUgKRNbqPcioz0OuX4uEBsUOG9QHs-x-RDQ2HOx-PstKMwWjEuas=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Verti Marte All That Jazz Po-boy",
@@ -2040,7 +3057,7 @@
         "All That Jazz"
       ],
       "Person": [],
-      "Category": "Specific Food / Sandwich",
+      "Category": "Food",
       "Description": "Order the All That Jazz po-boy; one commenter said one sandwich can feed two people.",
       "Lat": 29.9625,
       "Long": -90.062,
@@ -2051,14 +3068,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food",
+        "Music"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=1650707284474479029&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGWCUF-RThs-QiWAt0Z9u8TBbya-JOHONS-SNlzlM9pH6B3WzTHByn-lwOiDFiBamMHQ_7DWEw6xEJelGkuxuKNQ4CmOCi0BlA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Verti Marte Spicy Muffuletta",
       "Address": "1201 Royal St, New Orleans, LA 70116",
       "Alias": [],
       "Person": [],
-      "Category": "Specific Food / Sandwich",
+      "Category": "Food",
       "Description": "Order the spicy muffuletta at Verti Marte.",
       "Lat": 29.9625,
       "Long": -90.062,
@@ -2069,14 +3096,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=1650707284474479029&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGWCUF-RThs-QiWAt0Z9u8TBbya-JOHONS-SNlzlM9pH6B3WzTHByn-lwOiDFiBamMHQ_7DWEw6xEJelGkuxuKNQ4CmOCi0BlA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Frenchmen Street",
       "Address": "Frenchmen St, New Orleans, LA 70116",
       "Alias": [],
       "Person": [],
-      "Category": "Street / Music District",
+      "Category": "Music",
       "Description": "Go to Frenchmen Street in the evening for live music, jazz clubs, bars, and the nearby night art market.",
       "Lat": 29.965,
       "Long": -90.0572,
@@ -2087,14 +3123,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Music",
+        "Bar",
+        "Art"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=13535912857313896161&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPhEnU6STq5O44yxbACcdvMf9-qzwDszLvEGTyc2RC04F2CAMeXcjfWAAC-rgUrRHMUBTat5PaTYTag0-q70uT0nhHFngiPfkOY7Vfr1Q7zCGiIJceTPpPhh9gNESFZQwlnm_js_rbYsf29YcI=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Bourbon Street",
       "Address": "Bourbon St, New Orleans, LA",
       "Alias": [],
       "Person": [],
-      "Category": "Street / Nightlife",
+      "Category": "Bar",
       "Description": "Treat Bourbon Street as spectacle rather than the whole trip; daytime drinks were suggested before it gets wild at night.",
       "Lat": 29.9585,
       "Long": -90.0668,
@@ -2105,14 +3152,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=13175306893802952893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZP7ijH4C5uD7PjnxTXFwVljMigq_yXLVtWUlHV8u1P3Lr-fLoAkcauLLkjZkMnMnGx4d5MEmUuCoPe_IGLwIgUqwbA2OGKrH-d6Fcu00J5iUDllY_gMTh9pX0loLBuPmSAGH3H8dVJl7EOCvQ=s4800-w612-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Magazine Street",
       "Address": "Magazine St, New Orleans, LA",
       "Alias": [],
       "Person": [],
-      "Category": "Street / Shopping Area",
+      "Category": "Neighborhood",
       "Description": "Walk Magazine Street for restaurants, shops, local-artist goods, and neighborhood wandering.",
       "Lat": 29.9249,
       "Long": -90.0852,
@@ -2123,14 +3179,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Neighborhood",
+        "Art",
+        "Shopping"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=13014011177009274222&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPgGrIo_MnPNqTQOyiys6b_JnJdyOF7OU-ASJwGap1RaqotJAlf6qeSc6toKv_DSqJQRW_p-Xu-fkw7E10yZecC-PsSkTS8W58QdXvxBz-tzf2ZAgzMQNuPaDj33RNX-34O8irY1sEjAVkAdRX_Qg-w=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Royal Street",
       "Address": "Royal St, New Orleans, LA",
       "Alias": [],
       "Person": [],
-      "Category": "Street / Walking Area",
+      "Category": "Outdoor",
       "Description": "Stroll Royal Street toward Jackson Square for architecture, galleries, performers, and a calmer French Quarter wander.",
       "Lat": 29.9592,
       "Long": -90.0641,
@@ -2141,7 +3208,19 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Outdoor",
+        "History",
+        "Art",
+        "Landmark"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=15518711249850809739&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPxknUFsx5JP9XO7c9IH6Spm5ycs2lgHTX9GFI2PjFvIe0HHf33pAz5dQR06hYCZHiO66cofUqT8jWYo6qCDPDogxkDGQgLQtmHlLad_GZ67r0CjXHhGLNrKS9YWav8QFQ2dAlyl7Y_e-Sn184=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Loretta’s Authentic Pralines",
@@ -2150,7 +3229,7 @@
         "Loretta's Pralines"
       ],
       "Person": [],
-      "Category": "Sweets / Beignets",
+      "Category": "Cafe",
       "Description": "Go for pralines and beignets.",
       "Lat": 29.969,
       "Long": -90.0576,
@@ -2161,14 +3240,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Cafe",
+        "Food"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=12114010050927040044&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFYsPZxe3hxQSERa4-lPlfD7lyWEuLJQcSjo9r-TN_SnFSnUTr_SKwK9MTy6AwSPec3pBzMkFlvayRhJtFRUG7X_Nj1JTD87xI=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Garden District Architecture Tour",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Tour / Architecture",
+      "Category": "Tour",
       "Description": "Take an architecture tour in the Garden District.",
       "Lat": 29.9299,
       "Long": -90.084,
@@ -2179,14 +3268,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=15189983457539519531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFYkAGIM9SvsiLfInr6qP7vleCbrY9AUzpllE3oRZ-bjOq25_g8BmCH8EWkh4FgzBZ2yvLdyEePRTHvhusjC9Lta7f4wzoSPng=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "NOLA Pedal Barge",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Tour / Boat",
+      "Category": "Tour",
       "Description": "Consider NOLA Pedal Barge, with the caveat that one reply raised wildlife-impact concerns.",
       "Lat": 29.9511,
       "Long": -90.0715,
@@ -2197,14 +3296,23 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=16214766857211975081&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZPpYvAuZiPhqWmh4EveXMhMFQgf5VaDMmbJaj7rHaac3UI9La8md4VeoXR48jNR82sMoqlHuOyZ4jyzSwCqwQmiISTXcVRoY_1QCdCFVSgoy_zDivMBJ1m7I5xCBlqjXdGQN7IIM1jb0FIn39P6WGbktQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Cemetery Tour",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Tour / Cemetery",
+      "Category": "Tour",
       "Description": "Do a cemetery tour, especially for St. Louis Cemetery No. 1 or Lake Lawn/Metairie Cemetery.",
       "Lat": 29.9584,
       "Long": -90.0719,
@@ -2215,7 +3323,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=6678347799050244899&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFyhDr2au_YLzcM3ZmD42vazDLkp884Yw3Q1yeDxnLhDwbJaWWZe974WhRoAvEB7u05kUrYbmYNQB5Bl5womnwoxEM-_eGZcQM=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "New Orleans Ghost Tour",
@@ -2225,7 +3343,7 @@
         "Haunted pub crawl"
       ],
       "Person": [],
-      "Category": "Tour / Haunted",
+      "Category": "Tour",
       "Description": "Do a ghost or haunted pub tour, even if cheesy; commenters still described them as fun.",
       "Lat": 29.9584,
       "Long": -90.0644,
@@ -2236,7 +3354,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Bar"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=5413841663720898835&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqHwNEeVqXeoove8arbx4JEjGx2iArsoTbLTVcQrv02Z9yOSfOrG7NWVGBxDi9Uam_qXKiDex7RX2yawIWMZjusi6s5clK76LCw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Louisiana State Museum French Quarter Walking Tour",
@@ -2246,7 +3374,7 @@
         "The Cabildo"
       ],
       "Person": [],
-      "Category": "Tour / History",
+      "Category": "Tour",
       "Description": "Take a French Quarter walking tour with Louisiana State Museum docents when available.",
       "Lat": 29.958,
       "Long": -90.0635,
@@ -2257,7 +3385,18 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Museum",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=15102400544505296052&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZNbQtu1BtxzYSSz_bk1yP-YQmMYHHTafElnwSTGYmAvynvhxIL6nZ3Du81_CtXgouSYp-nkzmE1uC69_EpWSYFn3aJQYJuWTTZwkNAa7V1oJpTXECv4bPb_RKS7PbXLG91yv-yQcLoqjWrQgKQ6oK-u=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "National Park Service French Quarter Ranger Talk",
@@ -2266,7 +3405,7 @@
         "New Orleans Jazz National Historical Park Visitor Center"
       ],
       "Person": [],
-      "Category": "Tour / History",
+      "Category": "Tour",
       "Description": "Take a French Quarter walking tour or ranger-led program with the National Park Service when available.",
       "Lat": 29.9549,
       "Long": -90.0652,
@@ -2277,14 +3416,25 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Outdoor",
+        "History"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=15176191052503042227&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOLgLXNzjb6QQod9jnKWun-qIUkAOkAd3Dsg1XGCrJAWp0tNzEEMsqPBTkzGWiQIgDzUzTlB9nm3Uvn7uwqGk_fjU2z9y7KCLpj4IwnaM5pYoCEeiIXTEYgJ2jz2xi3l36jEKtgIT95qWG7lw=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Airboat Swamp Tour",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Tour / Nature",
+      "Category": "Tour",
       "Description": "Do an airboat swamp tour as a more adrenaline-focused swamp experience.",
       "Lat": 29.9511,
       "Long": -90.0715,
@@ -2295,14 +3445,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=9576623745191616864&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqF-HJIQfFqvPMWyT-fgRsL-d6IcQrSXzChwPrQLcbiCLiMC_Z_aPE4NSQy8LVTPz7K26Gduaz097HoIEoX7tll2tyWR6lSlDck=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Cajun Encounters Swamp Tour",
       "Address": "55345 US-90, Slidell, LA 70461",
       "Alias": [],
       "Person": [],
-      "Category": "Tour / Nature",
+      "Category": "Tour",
       "Description": "Specific swamp tour recommendation; choose the smaller boat if available to get closer to wildlife.",
       "Lat": 30.2762,
       "Long": -89.7834,
@@ -2313,14 +3473,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=9249188780090932777&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqGpoxoF1ebwRCO8rbQCWSjBnIUOKzEgD_hrOQ45DwtGITWUg6ZwDcXwr9KL5iv-GE5fWxp-Bw5s_mFXgNJEko3eytsAgpq99_0=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Swamp Tour",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Tour / Nature",
+      "Category": "Tour",
       "Description": "Do a swamp tour; one thread specifically recommended smaller boats for closer wildlife viewing.",
       "Lat": 29.9511,
       "Long": -90.0715,
@@ -2331,14 +3501,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=7913386047768935315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqEj4FtU5vba-Du3DQcPcywYPt8UztpwG75li1QLqSOy9AXOM1Z88E2t2aUem2dEpfUVkM-1aiPvcgBSL7Ydmgr3cYGTnIuDCZQ=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "NOLA Kayak Tours",
       "Address": null,
       "Alias": [],
       "Person": [],
-      "Category": "Tour / Outdoor",
+      "Category": "Tour",
       "Description": "Consider NOLA Kayak Tours for an active outdoor excursion.",
       "Lat": 29.9844,
       "Long": -90.0881,
@@ -2349,7 +3529,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=9075487149108550873&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqFez1xZC9rvzihvaUx3o9BDbjnn9R-B8K5EIYWQilZ3FMw2ZY83wPTvNFftahJj8p-cmoBtiuzaA7SdrWBQv5uGPLaaShLOaEY=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "NOLA Art Walk",
@@ -2358,7 +3548,7 @@
         "NOLA Art Walk street art tour"
       ],
       "Person": [],
-      "Category": "Tour / Street Art",
+      "Category": "Tour",
       "Description": "Take a street art tour down St. Claude.",
       "Lat": 29.9685,
       "Long": -90.042,
@@ -2369,7 +3559,17 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Tour",
+        "Art"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=2808651262071214115&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/places/ANXAkqE9DQCM-aEPjEFem3fuq3ZpVSNt-25LnPpsnlOgyCGlz4k6XnovwUerxIfLBKBhauorud_ikKgNVRa3kGlvKjtWkIlFhgv51Ew=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Algiers Ferry",
@@ -2379,7 +3579,7 @@
         "Algiers Point ferry"
       ],
       "Person": [],
-      "Category": "Transit Experience / Ferry",
+      "Category": "Transit",
       "Description": "Cheap, short Mississippi River ride to Algiers Point with skyline and river views.",
       "Lat": 29.9512,
       "Long": -90.0627,
@@ -2390,7 +3590,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Transit"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=16341521729161822621&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3vFOyIEQFotmdXaI4xK_vFiJNFf4eX6EbecUVMErg_0fpyoeNPmQJUqV226AhaZCO5TvteqEipXKgzpPxorF1cLBU8UKuu2Ix-UlGLZ4WENYdC0jtxuyz2sKo-leAc7eVFvpR60TozIhkaA=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "St. Charles Streetcar",
@@ -2400,7 +3609,7 @@
         "Route 12"
       ],
       "Person": [],
-      "Category": "Transit Experience / Route",
+      "Category": "Transit",
       "Description": "Ride from Canal Street uptown and back, ideally around golden hour with windows open; be mindful locals use it for commuting.",
       "Lat": 29.9525,
       "Long": -90.07,
@@ -2411,7 +3620,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Transit"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=13883159280798199841&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZOJhkQATBv3ycazUt19DxbX6bgw9cFgwZ8-AgydkrPTU1581CFKAceOOoPwNnlDOICdkkWbx1VKHGjiZMddzFeRJ6lQwQ6RmgOseRHwgsagVFbDzK6mcSu1ZCSE_QKWashPUBjVf70mvi3b2A=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Mississippi Riverfront",
@@ -2420,7 +3638,7 @@
         "Riverwalk"
       ],
       "Person": [],
-      "Category": "Walking Area / View",
+      "Category": "Transit",
       "Description": "Walk the riverfront for river views, people-watching, ferry access, and a break from the Quarter streets.",
       "Lat": 29.9543,
       "Long": -90.0616,
@@ -2431,14 +3649,24 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Transit",
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=9657814920871484791&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZMS4W0kaGhjy9Uv7AN72U0yYLxBlIzy8e1BNnNoNxthsr2eZEcAPxZhrIidGAA_kQCHizM7YKJrVTByEzqxHS8hp6JL_YjmKYnDBRN2yrijB_nVi3-FQGh-0tnMHdUomZnydzioIOea8d5M=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$"
     },
     {
       "Name": "Audubon Zoo",
       "Address": "6500 Magazine St, New Orleans, LA 70118",
       "Alias": [],
       "Person": [],
-      "Category": "Zoo / Outdoor",
+      "Category": "Outdoor",
       "Description": "Visit Audubon Zoo if time allows.",
       "Lat": 29.923,
       "Long": -90.1314,
@@ -2449,7 +3677,16 @@
         "https://www.reddit.com/r/AskNOLA/comments/12fpur8/nola_experiences_that_are_a_must.json",
         "https://www.reddit.com/r/AskNOLA/comments/1kdgl25/locals_what_actually_is_your_favorite_touristy.json",
         "https://www.reddit.com/r/AskNOLA/comments/1pnrf1t/first_time_in_new_orleans_looking_for_local.json"
-      ]
+      ],
+      "Favorite": false,
+      "Categories": [
+        "Outdoor"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://maps.google.com/?cid=46544153103298691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "ThumbnailUrl": "https://lh3.googleusercontent.com/place-photos/AJRVUZME2HEIzpxd2kU2fJZthjhmfJyc4aonxTtSqjwy4Z05_devOSn-vBcYgPqvDy9oXLkzN_YxZKN-owa0YAjlFoF5nB-DeS2vTw3XtNd8yIn66pKyXdCM6AxQTySKV-YqcPmJ44hMv5mc3pYh8Q=s4800-w640-h320",
+      "HoursSummary": null,
+      "PriceLevel": "$$"
     },
     {
       "Name": "Airbnb Home Base",
@@ -2459,14 +3696,23 @@
         "Vacation rental"
       ],
       "Person": [],
-      "Category": "Lodging / Airbnb",
+      "Category": "Lodging",
       "Description": "Approximate home base for the New Orleans trip. Update this record with the exact address and coordinates once confirmed.",
       "Lat": 29.9748,
       "Long": -90.0486,
       "MapType": "lodging",
       "GeoConfidence": "approximate",
       "Notes": "Approximate location inferred from the trip-planning screenshot; not an exact address.",
-      "SourceThread": []
+      "SourceThread": [],
+      "Favorite": true,
+      "Categories": [
+        "Lodging"
+      ],
+      "WebsiteUrl": null,
+      "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Airbnb%20Home%20Base%20Near%20N%20Miro%20St%20%26%20Florida%20Ave%2C%20New%20Orleans%2C%20LA%2070117",
+      "ThumbnailUrl": null,
+      "HoursSummary": null,
+      "PriceLevel": null
     }
   ]
 }

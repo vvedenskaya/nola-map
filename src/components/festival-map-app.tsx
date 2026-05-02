@@ -1,8 +1,8 @@
 "use client";
 
-/* eslint-disable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps, @next/next/no-img-element */
 
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type PointerEvent } from "react";
 import { APIProvider, Map, AdvancedMarker, AdvancedMarkerAnchorPoint } from "@vis.gl/react-google-maps";
 import { dayLabels, eventTypeLabels } from "@/data/festival";
 import { EventType, FestivalDay, FestivalEvent, Venue } from "@/types/festival";
@@ -26,6 +26,7 @@ const MAP_MAX_MOBILE_ZOOM_DELTA = 1.2;
 const MAP_FOCUS_ZOOM = 15.8;
 const MAP_MIN_ZOOM = 10;
 const MAP_MAX_ZOOM = 19;
+const GOOGLE_MAPS_MAP_ID = process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID || "DEMO_MAP_ID";
 const GEOFENCE_RADIUS_METERS = 32000;
 const CAMERA_EPSILON = 0.000001;
 const ZOOM_EPSILON = 0.001;
@@ -75,6 +76,8 @@ const CATEGORY_FAMILY_STYLES: Record<string, VisualStyle> = {
   aquarium: { color: "#0891b2", icon: "🐠" },
   area: { color: "#64748b", icon: "◇" },
   art: { color: "#7c3aed", icon: "◆" },
+  activity: { color: "#0f766e", icon: "◇" },
+  attraction: { color: "#0891b2", icon: "△" },
   bar: { color: "#be123c", icon: "◐" },
   boat: { color: "#0284c7", icon: "◒" },
   cafe: { color: "#b45309", icon: "☕" },
@@ -93,6 +96,7 @@ const CATEGORY_FAMILY_STYLES: Record<string, VisualStyle> = {
   fishing: { color: "#0369a1", icon: "◒" },
   food: { color: "#ea580c", icon: "◍" },
   historic: { color: "#854d0e", icon: "◇" },
+  history: { color: "#854d0e", icon: "◇" },
   hotel: { color: "#a21caf", icon: "◐" },
   landmark: { color: "#0f766e", icon: "◆" },
   lodging: { color: "#e11d48", icon: "★" },
@@ -112,6 +116,7 @@ const CATEGORY_FAMILY_STYLES: Record<string, VisualStyle> = {
   rooftop: { color: "#7c3aed", icon: "△" },
   specific: { color: "#ea580c", icon: "◍" },
   street: { color: "#ca8a04", icon: "↔" },
+  shopping: { color: "#16a34a", icon: "◧" },
   sweets: { color: "#db2777", icon: "○" },
   tour: { color: "#0f766e", icon: "↝" },
   transit: { color: "#2563eb", icon: "↔" },
@@ -140,6 +145,7 @@ const MAP_TYPE_STYLES: Record<string, VisualStyle> = {
 };
 
 const UNCATEGORIZED_KEY = "uncategorized";
+const FAVORITES_FILTER_KEY = "Favorites";
 const SERVICES_KEY = "services";
 const LOCAL_BUSINESS_KEY = "local business";
 const COMMUNITY_HUB_KEY = "community hub";
@@ -317,8 +323,54 @@ function getCategoryFamily(category: string): string {
   return (category || UNCATEGORIZED_KEY).split("/")[0].trim().toLowerCase() || UNCATEGORIZED_KEY;
 }
 
-function getCategoryGroupKey(category: string): string {
-  return (category || UNCATEGORIZED_KEY).split("/")[0].trim() || "Uncategorized";
+function toTitleCase(value: string): string {
+  return value.replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function getCategoryGroupKey(category: string, venue?: Venue): string {
+  const directCategory = (category || "").trim();
+  if (directCategory && !directCategory.includes("/") && CATEGORY_FAMILY_STYLES[getCategoryFamily(directCategory)]) {
+    return directCategory;
+  }
+
+  const raw = [
+    category,
+    venue?.name,
+    venue?.description,
+    venue?.mapType,
+    venue?.address,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+  const prefix = (category || UNCATEGORIZED_KEY).split("/")[0].trim();
+
+  if (/bar|drink|cocktail|pub|rooftop|bourbon street|nightlife/.test(raw)) return "Bar";
+  if (/lodging|airbnb|vacation rental/.test(raw)) return "Lodging";
+  if (/practical|tip|strategy|scheduling/.test(raw)) return "Practical Tip";
+  if (/cafe|coffee|donut|beignet|sweets/.test(raw)) return "Cafe";
+  if (/music|jazz|frenchmen|street performance|mardi gras indian|performance/.test(raw)) return "Music";
+  if (/restaurant|food|deli|diner|po-?boy|sandwich|brunch|seafood|creole|chicken|burger/.test(raw)) return "Food";
+  if (/museum/.test(raw)) return "Museum";
+  if (/tour|cruise|boat|charter/.test(raw)) return "Tour";
+  if (/neighborhood|ferry destination|new orleans east/.test(raw)) return "Neighborhood";
+  if (/transit|ferry|streetcar|route/.test(raw)) return "Transit";
+  if (/art|gallery|culture|market/.test(raw)) return "Art";
+  if (/cemetery|historic|history|plantation|church/.test(raw)) return "History";
+  if (/landmark|observation|square/.test(raw)) return "Landmark";
+  if (/park|outdoor|riverfront|walking|zoo|nature|fishing/.test(raw)) return "Outdoor";
+  if (/shopping|market/.test(raw)) return "Shopping";
+  if (/event|festival|seasonal/.test(raw)) return "Event";
+  if (/aquarium|attraction/.test(raw)) return "Attraction";
+
+  return prefix ? toTitleCase(prefix) : "Uncategorized";
+}
+
+function getVenueCategoryKeys(venue: Venue): string[] {
+  const rawCategories = venue.categories && venue.categories.length > 0
+    ? venue.categories
+    : [getVenueCategoryKey(venue)];
+  return [...new Set(rawCategories.map((category) => getCategoryGroupKey(category, venue)))];
 }
 
 function getCategoryStyle(category: string): VisualStyle {
@@ -751,6 +803,69 @@ function getTimelineFillColor(type: EventType): string {
   return `rgb(${r}, ${g}, ${b})`;
 }
 
+function decodeGoogleMapsUrl(value: string): string {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
+
+function resizeGoogleMapsThumbnailUrl(url: string): string {
+  return url.replace(/=w\d+-h\d+(-[a-z-]+)?$/i, "=w640-h320-k-no");
+}
+
+function getEmbeddedGoogleMapsThumbnailUrl(venue: Venue): string {
+  if (venue.websiteUrl || !venue.googleMapsUrl) return "";
+  const decoded = decodeGoogleMapsUrl(venue.googleMapsUrl);
+  const match = decoded.match(/https:\/\/lh3\.googleusercontent\.com\/[^!\s"'<>]+/i);
+  return match?.[0] ? resizeGoogleMapsThumbnailUrl(match[0]) : "";
+}
+
+function getStaticMapThumbnailUrl(venue: Venue): string {
+  const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
+  if (!googleMapsApiKey || typeof venue.lat !== "number" || typeof venue.lng !== "number") return "";
+  return `https://maps.googleapis.com/maps/api/staticmap?center=${venue.lat},${venue.lng}&zoom=15&size=640x320&scale=2&maptype=roadmap&markers=color:red%7C${venue.lat},${venue.lng}&key=${googleMapsApiKey}`;
+}
+
+function getOpenStreetMapThumbnailUrl(venue: Venue): string {
+  if (typeof venue.lat !== "number" || typeof venue.lng !== "number") return "";
+  return `https://staticmap.openstreetmap.de/staticmap.php?center=${venue.lat},${venue.lng}&zoom=15&size=640x320&markers=${venue.lat},${venue.lng},red-pushpin`;
+}
+
+function PlaceCardThumbnail({ venue, categories }: { venue: Venue; categories: string[] }) {
+  const thumbnailCandidates = [
+    venue.thumbnailUrl || "",
+    getEmbeddedGoogleMapsThumbnailUrl(venue),
+    getStaticMapThumbnailUrl(venue),
+    getOpenStreetMapThumbnailUrl(venue),
+  ].filter(Boolean);
+  const [thumbnailIndex, setThumbnailIndex] = useState(0);
+  const thumbnailUrl = thumbnailCandidates[thumbnailIndex] || "";
+
+  useEffect(() => {
+    setThumbnailIndex(0);
+  }, [venue.id, venue.thumbnailUrl, venue.googleMapsUrl]);
+
+  if (!thumbnailUrl) {
+    return (
+      <div className="legacy-place-card-thumb is-placeholder" aria-hidden="true">
+        {getCategoryStyle(categories[0] || getVenueCategoryKey(venue)).icon}
+      </div>
+    );
+  }
+
+  return (
+    <img
+      key={thumbnailUrl}
+      className="legacy-place-card-thumb"
+      src={thumbnailUrl}
+      alt=""
+      onError={() => setThumbnailIndex((current) => current + 1)}
+    />
+  );
+}
+
 type FestivalMapAppProps = {
   venues: Venue[];
   events: FestivalEvent[];
@@ -768,15 +883,22 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
   const [lastInteractedVenueId, setLastInteractedVenueId] = useState<string | null>(null);
   const [activeDays, setActiveDays] = useState<FestivalDay[]>(() => getDefaultActiveDays(events));
   const [selectedEventId, setSelectedEventId] = useState<string | null>(null);
-  const [listView, setListView] = useState<"all" | "schedule">("all");
+  const [listView, setListView] = useState<"all" | "favorites" | "schedule">("all");
   const [isTimelineOpen, setIsTimelineOpen] = useState(false);
   const [showPastEvents, setShowPastEvents] = useState(true);
   const [now, setNow] = useState<Date | null>(null);
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
   const [activeCategoryKeys, setActiveCategoryKeys] = useState<string[]>(() =>
-    Array.from(new Set(venues.map((venue) => getCategoryGroupKey(getVenueCategoryKey(venue))))).sort((a, b) =>
+    Array.from(new Set(venues.flatMap((venue) => getVenueCategoryKeys(venue)))).sort((a, b) =>
       a.localeCompare(b)
     )
+  );
+  const [favoriteOnlyFilter, setFavoriteOnlyFilter] = useState(false);
+  const [favoriteByVenueId, setFavoriteByVenueId] = useState<Record<string, boolean>>(() =>
+    venues.reduce<Record<string, boolean>>((acc, venue) => {
+      acc[venue.id] = Boolean(venue.favorite);
+      return acc;
+    }, {})
   );
   const [activeProjectTypes] = useState<EventType[]>(ALL_PROJECT_TYPES);
   const [isProjectTypeMenuOpen, setIsProjectTypeMenuOpen] = useState(false);
@@ -795,6 +917,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
   const [hoveredVenueId, setHoveredVenueId] = useState<string | null>(null);
   const [allowOutOfBoundsNavigation, setAllowOutOfBoundsNavigation] = useState(false);
   const [mapFocusedVenueId, setMapFocusedVenueId] = useState<string | null>(null);
+  const [sidebarWidth, setSidebarWidth] = useState(360);
   const [isMobileUi, setIsMobileUi] = useState(false);
   const [mobileDetailVenueId, setMobileDetailVenueId] = useState<string | null>(null);
   const [mobileDetailEventId, setMobileDetailEventId] = useState<string | null>(null);
@@ -810,6 +933,11 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
     startVerticalZoom: number;
   } | null>(null);
   const mapPanelRef = useRef<HTMLElement | null>(null);
+  const sidebarResizeRef = useRef<{
+    startX: number;
+    startWidth: number;
+  } | null>(null);
+  const hoverCloseTimeoutRef = useRef<ReturnType<typeof globalThis.setTimeout> | null>(null);
   const hasAutoScrolledTimelineRef = useRef(false);
   const supportsHoverRef = useRef(false);
   const hasUserInteractedWithMapRef = useRef(false);
@@ -841,7 +969,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
 
   const lowerQuery = searchQuery.toLowerCase();
   const categoryFilterOptions = Array.from(
-    new Set(venues.map((venue) => getCategoryGroupKey(getVenueCategoryKey(venue))))
+    new Set(venues.flatMap((venue) => getVenueCategoryKeys(venue)))
   )
     .sort((a, b) => getCategoryDisplayLabel(a).localeCompare(getCategoryDisplayLabel(b)));
   const categoryLegendItems = categoryFilterOptions.map((category) => ({
@@ -877,12 +1005,17 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
 
   const hasActiveCategoryFilter = activeCategoryKeys.length < categoryFilterOptions.length;
 
+  function isVenueFavorite(venue: Venue): boolean {
+    return favoriteByVenueId[venue.id] ?? Boolean(venue.favorite);
+  }
+
   const visibleVenues = venues.filter((venue) => {
     const venueEvents = eventsByVenueId.get(venue.id) ?? [];
     const labelProjectTypes = getVenueLabelProjectTypes(venue);
     const categoryKey = getVenueCategoryKey(venue);
-    const categoryGroupKey = getCategoryGroupKey(categoryKey);
-    const matchesCategory = activeCategoryKeys.includes(categoryGroupKey);
+    const categoryKeys = getVenueCategoryKeys(venue);
+    const matchesCategory = categoryKeys.some((category) => activeCategoryKeys.includes(category));
+    const matchesFavorite = !favoriteOnlyFilter || isVenueFavorite(venue);
     const matchesProjectType = labelProjectTypes.some((type) => activeProjectTypes.includes(type)) ||
       venueEvents.some((event) => eventMatchesProjectTypeFilter(event, activeProjectTypes)) ||
       venueEvents.length === 0;
@@ -893,6 +1026,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
         (venue.address || "").toLowerCase().includes(lowerQuery) ||
         (venue.mapType || "").toLowerCase().includes(lowerQuery) ||
         categoryKey.toLowerCase().includes(lowerQuery) ||
+        categoryKeys.some((category) => category.toLowerCase().includes(lowerQuery)) ||
         venueEvents.some((event) => {
           if (!activeDayFilter.includes(event.day) || !eventMatchesProjectTypeFilter(event, activeProjectTypes)) {
             return false;
@@ -904,7 +1038,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
           );
         })
       : true;
-    return matchesCategory && matchesProjectType && matchesSearch;
+    return matchesCategory && matchesFavorite && matchesProjectType && matchesSearch;
   });
 
   const visibleEvents = events
@@ -971,7 +1105,6 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
   const selectedMobileVenue = mobileDetailVenueId
     ? venues.find((venue) => venue.id === mobileDetailVenueId) ?? null
     : null;
-  const selectedMobileVenueLabelProjectTypes = selectedMobileVenue ? getVenueLabelProjectTypes(selectedMobileVenue) : [];
   const selectedMobileVenueEvents = selectedMobileVenue
     ? events
         .filter(
@@ -1051,14 +1184,16 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
   const sidebarEntries = [
     ...visibleMappableVenues
       .filter((venue) => venue.serviceType !== "toilets")
-      .map((venue) => ({
-      id: `location:${venue.id}`,
-      category: getCategoryGroupKey(venueCategoryById.get(venue.id) ?? VENUE_KEY),
-      kind: "location" as const,
-      sortLabel: venue.name.toLowerCase(),
-      venue,
-      event: null,
-      })),
+      .flatMap((venue) =>
+        getVenueCategoryKeys(venue).map((category) => ({
+          id: `location:${venue.id}:${category}`,
+          category,
+          kind: "location" as const,
+          sortLabel: venue.name.toLowerCase(),
+          venue,
+          event: null,
+        }))
+      ),
     ...dedupedSidebarVisibleEvents.flatMap((event) =>
       getSidebarEventCategoryKeys(event).map((category) => ({
         id: `event:${event.id}:${category}`,
@@ -1099,6 +1234,17 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
     }),
   }));
   const visibleCategorizedVenuesCount = sortedSidebarGroups.reduce((sum, group) => sum + group.entries.length, 0);
+  const favoriteSidebarEntries = visibleMappableVenues
+    .filter((venue) => venue.serviceType !== "toilets" && isVenueFavorite(venue))
+    .map((venue) => ({
+      id: `favorite:${venue.id}`,
+      category: FAVORITES_FILTER_KEY,
+      kind: "location" as const,
+      sortLabel: venue.name.toLowerCase(),
+      venue,
+      event: null,
+    }))
+    .sort((a, b) => a.sortLabel.localeCompare(b.sortLabel));
 
   const scheduleByDay = SCHEDULE_DAY_ORDER.map((day) => {
     const dayEvents = scheduleVisibleEvents.filter((event) => event.day === day);
@@ -1219,22 +1365,143 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
     });
   }
 
-  function focusVenue(venue: Venue, zoom = MAP_FOCUS_ZOOM) {
-    const lat = venue.lat ?? MAP_CENTER.lat;
-    const lng = venue.lng ?? MAP_CENTER.lng;
-    const center = getModalSafeCenter({ lat, lng }, zoom);
-    setSelectedVenueId(venue.id);
-    setLastInteractedVenueId(venue.id);
-    setSelectedEventId(null);
-    setMapFocusedVenueId(null);
-    setAllowOutOfBoundsNavigation(false);
-    setMapCenter(center);
-    setMapZoom(zoom);
+  function toggleFavorite(venue: Venue) {
+    const nextFavorite = !isVenueFavorite(venue);
+    setFavoriteByVenueId((current) => ({
+      ...current,
+      [venue.id]: nextFavorite,
+    }));
+
+    fetch("/api/favorites", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: venue.name, favorite: nextFavorite }),
+    }).then((response) => {
+      if (response.ok) return;
+      setFavoriteByVenueId((current) => ({
+        ...current,
+        [venue.id]: !nextFavorite,
+      }));
+    }).catch(() => {
+      setFavoriteByVenueId((current) => ({
+        ...current,
+        [venue.id]: !nextFavorite,
+      }));
+    });
+  }
+
+  function clearHoverCloseTimer() {
+    if (!hoverCloseTimeoutRef.current) return;
+    globalThis.clearTimeout(hoverCloseTimeoutRef.current);
+    hoverCloseTimeoutRef.current = null;
+  }
+
+  function openHoveredVenue(venueId: string) {
+    clearHoverCloseTimer();
+    setHoveredVenueId(venueId);
+  }
+
+  function scheduleHoveredVenueClose(venueId: string) {
+    clearHoverCloseTimer();
+    hoverCloseTimeoutRef.current = globalThis.setTimeout(() => {
+      setHoveredVenueId((current) => (current === venueId ? null : current));
+      hoverCloseTimeoutRef.current = null;
+    }, 260);
+  }
+
+  function startSidebarResize(event: PointerEvent<HTMLButtonElement>) {
+    if (isMobileUi) return;
+    sidebarResizeRef.current = {
+      startX: event.clientX,
+      startWidth: sidebarWidth,
+    };
+    event.currentTarget.setPointerCapture(event.pointerId);
+  }
+
+  function renderPlaceCard(venue: Venue, options?: { compact?: boolean; onClose?: () => void }) {
+    const compact = options?.compact ?? false;
+    const categories = getVenueCategoryKeys(venue);
+    const primaryActionUrl = venue.websiteUrl || venue.googleMapsUrl;
+    const primaryActionLabel = venue.websiteUrl ? "Website" : "Google Maps";
+    const hasMeta = Boolean(venue.hoursSummary);
+
+    return (
+      <article className={`legacy-place-card ${compact ? "is-compact" : ""}`}>
+        <PlaceCardThumbnail venue={venue} categories={categories} />
+        <div className="legacy-place-card-body">
+          <div className="legacy-place-card-head">
+            <div>
+              <h3>{venue.name}</h3>
+              {venue.address ? <p className="legacy-place-card-address">{venue.address}</p> : null}
+            </div>
+            <button
+              type="button"
+              className={`legacy-favorite-button ${isVenueFavorite(venue) ? "is-active" : ""}`}
+              aria-pressed={isVenueFavorite(venue)}
+              onClick={(event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                toggleFavorite(venue);
+              }}
+            >
+              <span aria-hidden="true">★</span>
+              <span>{isVenueFavorite(venue) ? "Saved" : "Save"}</span>
+            </button>
+            {options?.onClose ? (
+              <button
+                type="button"
+                className="legacy-popup-close"
+                aria-label="Close location popup"
+                onClick={(event) => {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  options.onClose?.();
+                }}
+              >
+                ×
+              </button>
+            ) : null}
+          </div>
+          <div className="legacy-type-chip-group">
+            {categories.map((category) => (
+              <span
+                key={`${venue.id}-place-card-category-${category}`}
+                className="type-chip"
+                style={{ backgroundColor: getCategoryStyle(category).color }}
+              >
+                {getCategoryStyle(category).icon} {getCategoryDisplayLabel(category)}
+              </span>
+            ))}
+            {venue.priceLevel ? <span className="type-chip type-price">{venue.priceLevel}</span> : null}
+          </div>
+          {hasMeta ? (
+            <div className="legacy-place-card-meta">
+              {venue.hoursSummary ? <span>{venue.hoursSummary}</span> : null}
+            </div>
+          ) : null}
+          {venue.description ? <p className="legacy-place-card-description">{venue.description}</p> : null}
+          {venue.notes ? <p className="legacy-place-card-note">{venue.notes}</p> : null}
+          <div className="legacy-place-card-actions">
+            {primaryActionUrl ? (
+              <a href={primaryActionUrl} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>
+                {primaryActionLabel}
+              </a>
+            ) : null}
+            {venue.googleMapsUrl && venue.websiteUrl ? (
+              <a href={venue.googleMapsUrl} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>
+                Google Maps
+              </a>
+            ) : null}
+          </div>
+        </div>
+      </article>
+    );
   }
 
   function focusVenueOnMapOnly(venue: Venue, zoom = MAP_FOCUS_ZOOM) {
     const lat = venue.lat ?? MAP_CENTER.lat;
     const lng = venue.lng ?? MAP_CENTER.lng;
+    hasUserInteractedWithMapRef.current = true;
     setSelectedVenueId(null);
     setSelectedEventId(null);
     setMapFocusedVenueId(venue.id);
@@ -1257,7 +1524,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
       setSelectedEventId(null);
       return;
     }
-    focusVenue(venue);
+    focusVenueOnMapOnly(venue);
   }
 
   function focusEvent(event: FestivalEvent, options?: { openVenueModal?: boolean }) {
@@ -1267,6 +1534,9 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
       openVenueModal ? getModalSafeCenter(target, MAP_FOCUS_ZOOM) : target;
     // When selecting from the sidebar, center on the venue location first.
     if (typeof venue?.lat === "number" && typeof venue.lng === "number") {
+      if (!openVenueModal) {
+        hasUserInteractedWithMapRef.current = true;
+      }
       setMapZoom(MAP_FOCUS_ZOOM);
       setMapCenter(resolveFocusCenter({ lat: venue.lat, lng: venue.lng }));
     } else if (
@@ -1275,6 +1545,9 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
       !Number.isNaN(event.lat) &&
       !Number.isNaN(event.lng)
     ) {
+      if (!openVenueModal) {
+        hasUserInteractedWithMapRef.current = true;
+      }
       setMapZoom(MAP_FOCUS_ZOOM);
       setMapCenter(resolveFocusCenter({ lat: event.lat, lng: event.lng }));
     }
@@ -1305,7 +1578,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
       setSelectedEventId(event.id);
       return;
     }
-    focusEvent(event);
+    focusEvent(event, { openVenueModal: false });
   }
 
   function scrollToMapPanelTop() {
@@ -1478,6 +1751,26 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
     mobileViewport.addEventListener("change", applyMobileUi);
     return () => {
       mobileViewport.removeEventListener("change", applyMobileUi);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const handlePointerMove = (event: globalThis.PointerEvent) => {
+      const resizeState = sidebarResizeRef.current;
+      if (!resizeState) return;
+      const delta = resizeState.startX - event.clientX;
+      setSidebarWidth(clamp(resizeState.startWidth + delta, 320, 640));
+    };
+    const handlePointerUp = () => {
+      sidebarResizeRef.current = null;
+    };
+
+    window.addEventListener("pointermove", handlePointerMove);
+    window.addEventListener("pointerup", handlePointerUp);
+    return () => {
+      window.removeEventListener("pointermove", handlePointerMove);
+      window.removeEventListener("pointerup", handlePointerUp);
     };
   }, []);
 
@@ -1664,6 +1957,17 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                 <span>{item.label}</span>
               </button>
             ))}
+            <button
+              className={`legacy-category-key-item is-favorites ${favoriteOnlyFilter ? "is-active" : "is-inactive"}`}
+              type="button"
+              aria-pressed={favoriteOnlyFilter}
+              onClick={() => setFavoriteOnlyFilter((current) => !current)}
+            >
+              <span className="legacy-category-key-symbol" aria-hidden="true">
+                ★
+              </span>
+              <span>Favorites</span>
+            </button>
           </div>
           <details className="legacy-category-dropdown">
             <summary>
@@ -1697,6 +2001,17 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                     <span>{item.label}</span>
                   </label>
                 ))}
+                <label className="legacy-category-dropdown-option is-favorites">
+                  <input
+                    type="checkbox"
+                    checked={favoriteOnlyFilter}
+                    onChange={() => setFavoriteOnlyFilter((current) => !current)}
+                  />
+                  <span className="legacy-category-key-symbol" aria-hidden="true">
+                    ★
+                  </span>
+                  <span>Favorites</span>
+                </label>
               </div>
             </div>
           </details>
@@ -1709,12 +2024,12 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
             <Map
               center={mapCenter}
               zoom={mapZoom}
-              mapId="2f9f04bb8e9c458045b99a65"
+              mapId={GOOGLE_MAPS_MAP_ID}
               mapTypeId={mapType}
               disableDefaultUI={true}
-              zoomControl={!selectedVenue}
+              zoomControl={!selectedVenue || !isMobileUi}
               clickableIcons={false}
-              gestureHandling={selectedVenue ? "none" : "greedy"}
+              gestureHandling={selectedVenue && isMobileUi ? "none" : "greedy"}
               minZoom={MAP_MIN_ZOOM}
               maxZoom={MAP_MAX_ZOOM}
               onCameraChanged={(ev) => {
@@ -1761,17 +2076,6 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                       "--label-gap": serviceIcon ? "14px" : "10px",
                     } as CSSProperties)
                   : undefined;
-                const venuePreviewItems = (eventsByVenueId.get(venue.id) ?? [])
-                  .filter((event) => !getEventProjectTypes(event).includes("services"))
-                  .filter((event) => {
-                    if (!eventMatchesProjectTypeFilter(event, activeProjectTypes)) return false;
-                    if (isUnscheduledEvent(event)) return hasUnscheduledEventDetails(event);
-                    if (!activeDayFilter.includes(event.day)) return false;
-                    return showPastEvents || !now || !isPastEvent(event, now);
-                  })
-                  .sort(sortScheduleEvents);
-                const previewItems = venuePreviewItems.slice(0, 3);
-                const remainingCount = Math.max(venuePreviewItems.length - previewItems.length, 0);
                 return (
                   <AdvancedMarker
                     key={venue.id}
@@ -1784,10 +2088,10 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                         className={`legacy-pin-wrap ${mapLabel ? "has-map-label" : ""}`}
                         onMouseEnter={() => {
                           if (!supportsHoverRef.current || selectedVenueId) return;
-                          setHoveredVenueId(venue.id);
+                          openHoveredVenue(venue.id);
                         }}
                         onMouseLeave={() => {
-                          setHoveredVenueId((current) => (current === venue.id ? null : current));
+                          scheduleHoveredVenueClose(venue.id);
                         }}
                       >
                         <div
@@ -1823,10 +2127,10 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                         className={`legacy-pin-wrap ${mapLabel ? "has-map-label" : ""}`}
                         onMouseEnter={() => {
                           if (!supportsHoverRef.current || selectedVenueId) return;
-                          setHoveredVenueId(venue.id);
+                          openHoveredVenue(venue.id);
                         }}
                         onMouseLeave={() => {
-                          setHoveredVenueId((current) => (current === venue.id ? null : current));
+                          scheduleHoveredVenueClose(venue.id);
                         }}
                       >
                         <button
@@ -1841,9 +2145,13 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                           onClick={(event) => {
                             event.preventDefault();
                             event.stopPropagation();
-                            setSelectedVenueId(venue.id);
                             setLastInteractedVenueId(venue.id);
-                            setSelectedEventId(null);
+                            if (isMobileUi) {
+                              setSelectedVenueId(venue.id);
+                              setSelectedEventId(null);
+                            } else {
+                              setHoveredVenueId(venue.id);
+                            }
                           }}
                         >
                           <span
@@ -1862,27 +2170,14 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                           </span>
                         ) : null}
                         {hoveredVenueId === venue.id ? (
-                          <div className="legacy-pin-hover-card" role="status" aria-live="polite">
-                            <strong>{venue.name}</strong>
-                            {previewItems.length > 0 ? (
-                              <ul className="legacy-popup-mini-list">
-                                {previewItems.map((event) => (
-                                  <li key={event.id}>
-                                    <strong>{event.title}</strong>
-                                    <span>
-                                      {isUnscheduledEvent(event)
-                                        ? "Additional item"
-                                        : `${dayLabels[event.day]} | ${event.startTime} - ${event.endTime}`}
-                                    </span>
-                                  </li>
-                                ))}
-                              </ul>
-                            ) : (
-                              <span className="legacy-pin-hover-empty">{venue.category || venue.label}</span>
-                            )}
-                            {remainingCount > 0 ? (
-                              <span className="legacy-pin-hover-more">+{remainingCount} more</span>
-                            ) : null}
+                          <div
+                            className="legacy-pin-hover-card"
+                            role="status"
+                            aria-live="polite"
+                            onMouseEnter={() => openHoveredVenue(venue.id)}
+                            onMouseLeave={() => scheduleHoveredVenueClose(venue.id)}
+                          >
+                            {renderPlaceCard(venue, { compact: true })}
                           </div>
                         ) : null}
                       </div>
@@ -1934,6 +2229,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                 onClick={() => {
                   setSelectedVenueId(null);
                   setSelectedEventId(null);
+                  setMapFocusedVenueId(null);
                   setAllowOutOfBoundsNavigation(false);
                   hasUserInteractedWithMapRef.current = false;
                   setMapCenter(MAP_CENTER);
@@ -1945,7 +2241,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
             </div>
             {geolocationHint ? <span className="legacy-geo-status">{geolocationHint}</span> : null}
           </div>
-          {selectedVenue ? (
+          {selectedVenue && isMobileUi ? (
             <div
               className="legacy-map-modal-overlay"
               role="presentation"
@@ -1983,20 +2279,20 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                           ? `${selectedVenueUnscheduledEventsWithDetails.length} unscheduled ${selectedVenueUnscheduledEventsWithDetails.length === 1 ? "item" : "items"}`
                           : "No scheduled events yet"}
                     </p>
-                    {selectedVenueLabelProjectTypes.length > 0 ? (
-                      <div className="legacy-popup-type-tags">
-                        {selectedVenueLabelProjectTypes.map((type) => (
-                          <span
-                            key={`venue-type-${type}`}
-                            className={`type-chip type-${type}`}
-                            style={{ backgroundColor: getProjectTypeColor(type) }}
-                          >
-                            {eventTypeLabels[type]}
-                          </span>
-                        ))}
-                      </div>
-                    ) : null}
                   </div>
+                  <button
+                    type="button"
+                    className={`legacy-favorite-button ${isVenueFavorite(selectedVenue) ? "is-active" : ""}`}
+                    aria-pressed={isVenueFavorite(selectedVenue)}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      toggleFavorite(selectedVenue);
+                    }}
+                  >
+                    <span aria-hidden="true">★</span>
+                    <span>{isVenueFavorite(selectedVenue) ? "Favorited" : "Favorite"}</span>
+                  </button>
                   <button
                     type="button"
                     className="legacy-popup-close"
@@ -2013,12 +2309,15 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                 </div>
                 <div className="legacy-popup-content">
                   <div className="legacy-type-chip-group">
-                    <span
-                      className="type-chip"
-                      style={{ backgroundColor: getCategoryStyle(getVenueCategoryKey(selectedVenue)).color }}
-                    >
-                      {getCategoryStyle(getVenueCategoryKey(selectedVenue)).icon} {getCategoryDisplayLabel(getVenueCategoryKey(selectedVenue))}
-                    </span>
+                    {getVenueCategoryKeys(selectedVenue).map((category) => (
+                      <span
+                        key={`${selectedVenue.id}-category-${category}`}
+                        className="type-chip"
+                        style={{ backgroundColor: getCategoryStyle(category).color }}
+                      >
+                        {getCategoryStyle(category).icon} {getCategoryDisplayLabel(category)}
+                      </span>
+                    ))}
                     <span
                       className="type-chip"
                       style={{ backgroundColor: getMapTypeStyle(selectedVenue.mapType).color }}
@@ -2175,7 +2474,16 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
           ) : null}
         </section>
 
-        <aside className="legacy-list-panel">
+        <aside
+          className="legacy-list-panel"
+          style={{ "--sidebar-width": `${sidebarWidth}px` } as CSSProperties}
+        >
+          <button
+            type="button"
+            className="legacy-sidebar-resize-handle"
+            aria-label="Resize sidebar"
+            onPointerDown={startSidebarResize}
+          />
           <section className="legacy-list-block legacy-list-controls">
             <div className="legacy-search-row">
               <input
@@ -2287,6 +2595,16 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
               </button>
               <button
                 type="button"
+                className={`legacy-chip ${listView === "favorites" ? "active" : ""}`}
+                onClick={() => {
+                  setListView("favorites");
+                  setIsTimelineOpen(false);
+                }}
+              >
+                Favorites
+              </button>
+              <button
+                type="button"
                 className={`legacy-chip ${listView === "schedule" ? "active" : ""}`}
                 onClick={() => {
                   setListView("schedule");
@@ -2323,20 +2641,33 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                       if (entry.kind === "location") {
                         const venue = entry.venue;
                         return (
-                          <button
+                          <div
                             key={entry.id}
-                            className={`legacy-venue-item ${selectedVenueId === venue.id || mobileDetailVenueId === venue.id ? "active" : ""}`}
-                            type="button"
-                            onClick={() => openListVenue(venue)}
+                            className={`legacy-venue-item-row ${selectedVenueId === venue.id || mapFocusedVenueId === venue.id || mobileDetailVenueId === venue.id ? "active" : ""}`}
                           >
-                            <span
-                              className="legacy-venue-dot"
-                              style={{ "--pin-color": venueColorById.get(venue.id) || venue.accent || "#8b5cf6" } as CSSProperties}
-                            />
-                            <span>
-                              {getServiceIcon(venue.serviceType) || getCategoryStyle(getVenueCategoryKey(venue)).icon} {venue.name}
-                            </span>
-                          </button>
+                            <button
+                              className="legacy-venue-item"
+                              type="button"
+                              onClick={() => openListVenue(venue)}
+                            >
+                              <span
+                                className="legacy-venue-dot"
+                                style={{ "--pin-color": venueColorById.get(venue.id) || venue.accent || "#8b5cf6" } as CSSProperties}
+                              />
+                              <span>
+                                {getServiceIcon(venue.serviceType) || getCategoryStyle(getVenueCategoryKey(venue)).icon} {venue.name}
+                              </span>
+                            </button>
+                            <button
+                              type="button"
+                              className={`legacy-favorite-icon-button ${isVenueFavorite(venue) ? "is-active" : ""}`}
+                              aria-label={isVenueFavorite(venue) ? `Unfavorite ${venue.name}` : `Favorite ${venue.name}`}
+                              aria-pressed={isVenueFavorite(venue)}
+                              onClick={() => toggleFavorite(venue)}
+                            >
+                              ★
+                            </button>
+                          </div>
                         );
                       }
                       const event = entry.event;
@@ -2371,6 +2702,50 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                     </div>
                   </details>
                 ))}
+              </div>
+            </section>
+          ) : listView === "favorites" ? (
+            <section className="legacy-list-block">
+              <div className="legacy-list-title">
+                <h2>Favorites</h2>
+                <span>{favoriteSidebarEntries.length}</span>
+              </div>
+              <div className="legacy-venue-list">
+                {favoriteSidebarEntries.length === 0 ? (
+                  <p className="legacy-popup-empty">No favorites yet. Star recommendations from the list or map details.</p>
+                ) : favoriteSidebarEntries.map((entry) => {
+                  if (entry.kind !== "location") return null;
+                  const venue = entry.venue;
+                  return (
+                    <div
+                      key={`favorite:${venue.id}`}
+                      className={`legacy-venue-item-row ${selectedVenueId === venue.id || mapFocusedVenueId === venue.id || mobileDetailVenueId === venue.id ? "active" : ""}`}
+                    >
+                      <button
+                        className="legacy-venue-item"
+                        type="button"
+                        onClick={() => openListVenue(venue)}
+                      >
+                        <span
+                          className="legacy-venue-dot"
+                          style={{ "--pin-color": venueColorById.get(venue.id) || venue.accent || "#8b5cf6" } as CSSProperties}
+                        />
+                        <span>
+                          {getServiceIcon(venue.serviceType) || getCategoryStyle(getVenueCategoryKey(venue)).icon} {venue.name}
+                        </span>
+                      </button>
+                      <button
+                        type="button"
+                        className="legacy-favorite-icon-button is-active"
+                        aria-label={`Unfavorite ${venue.name}`}
+                        aria-pressed="true"
+                        onClick={() => toggleFavorite(venue)}
+                      >
+                        ★
+                      </button>
+                    </div>
+                  );
+                })}
               </div>
             </section>
           ) : (
@@ -2913,32 +3288,35 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
                           ? `${selectedMobileVenueUnscheduledEventsWithDetails.length} unscheduled ${selectedMobileVenueUnscheduledEventsWithDetails.length === 1 ? "item" : "items"}`
                           : "No scheduled events yet"}
                     </p>
-                    {selectedMobileVenueLabelProjectTypes.length > 0 ? (
-                      <div className="legacy-popup-type-tags">
-                        {selectedMobileVenueLabelProjectTypes.map((type) => (
-                          <span
-                            key={`mobile-venue-type-${type}`}
-                            className={`type-chip type-${type}`}
-                            style={{ backgroundColor: getProjectTypeColor(type) }}
-                          >
-                            {eventTypeLabels[type]}
-                          </span>
-                        ))}
-                      </div>
-                    ) : null}
                   </div>
+                  <button
+                    type="button"
+                    className={`legacy-favorite-button ${isVenueFavorite(selectedMobileVenue) ? "is-active" : ""}`}
+                    aria-pressed={isVenueFavorite(selectedMobileVenue)}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      toggleFavorite(selectedMobileVenue);
+                    }}
+                  >
+                    <span aria-hidden="true">★</span>
+                    <span>{isVenueFavorite(selectedMobileVenue) ? "Favorited" : "Favorite"}</span>
+                  </button>
                   <button type="button" className="legacy-popup-close" aria-label="Close location popup" onClick={closeMobileDetail}>
                     ×
                   </button>
                 </div>
                 <div className="legacy-popup-content">
                   <div className="legacy-type-chip-group">
-                    <span
-                      className="type-chip"
-                      style={{ backgroundColor: getCategoryStyle(getVenueCategoryKey(selectedMobileVenue)).color }}
-                    >
-                      {getCategoryStyle(getVenueCategoryKey(selectedMobileVenue)).icon} {getCategoryDisplayLabel(getVenueCategoryKey(selectedMobileVenue))}
-                    </span>
+                    {getVenueCategoryKeys(selectedMobileVenue).map((category) => (
+                      <span
+                        key={`${selectedMobileVenue.id}-mobile-category-${category}`}
+                        className="type-chip"
+                        style={{ backgroundColor: getCategoryStyle(category).color }}
+                      >
+                        {getCategoryStyle(category).icon} {getCategoryDisplayLabel(category)}
+                      </span>
+                    ))}
                     <span
                       className="type-chip"
                       style={{ backgroundColor: getMapTypeStyle(selectedMobileVenue.mapType).color }}
@@ -3048,6 +3426,16 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
           }}
         >
           All
+        </button>
+        <button
+          type="button"
+          className={`legacy-chip ${listView === "favorites" && !isTimelineOpen ? "active" : ""}`}
+          onClick={() => {
+            setListView("favorites");
+            setIsTimelineOpen(false);
+          }}
+        >
+          Favorites
         </button>
         <button
           type="button"

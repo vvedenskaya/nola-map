@@ -32,6 +32,7 @@ type RecommendationItem = {
   Alias?: unknown;
   Person?: unknown;
   Category?: unknown;
+  Categories?: unknown;
   Description?: unknown;
   Lat?: unknown;
   Long?: unknown;
@@ -39,6 +40,12 @@ type RecommendationItem = {
   GeoConfidence?: unknown;
   Notes?: unknown;
   SourceThread?: unknown;
+  Favorite?: unknown;
+  WebsiteUrl?: unknown;
+  GoogleMapsUrl?: unknown;
+  ThumbnailUrl?: unknown;
+  HoursSummary?: unknown;
+  PriceLevel?: unknown;
 };
 
 const RECOMMENDATIONS_PATH = path.join(process.cwd(), "nola_reddit_recommendations_structured.json");
@@ -110,6 +117,7 @@ function mapRecommendationToVenue(item: RecommendationItem, index: number): Venu
   if (!name) return null;
 
   const category = asString(item.Category) || "Uncategorized";
+  const categories = asStringList(item.Categories);
   const mapType = asString(item.MapType) || "place";
   const address = asString(item.Address);
   const description = asString(item.Description);
@@ -120,6 +128,12 @@ function mapRecommendationToVenue(item: RecommendationItem, index: number): Venu
   const notes = asString(item.Notes);
   const geoConfidence = asString(item.GeoConfidence);
   const sourceThread = asStringList(item.SourceThread);
+  const favorite = item.Favorite === true;
+  const websiteUrl = asString(item.WebsiteUrl);
+  const googleMapsUrl = asString(item.GoogleMapsUrl);
+  const thumbnailUrl = asString(item.ThumbnailUrl);
+  const hoursSummary = asString(item.HoursSummary);
+  const priceLevel = asString(item.PriceLevel);
 
   return {
     id: `${slugify(name)}-${index + 1}`,
@@ -136,11 +150,17 @@ function mapRecommendationToVenue(item: RecommendationItem, index: number): Venu
     alias: aliases,
     person: people,
     category,
+    categories: categories.length > 0 ? categories : [category],
     mapType,
     geoConfidence: geoConfidence || undefined,
     notes: notes || undefined,
     sourceThread,
-    thumbnailUrl: "",
+    favorite,
+    websiteUrl: websiteUrl || undefined,
+    googleMapsUrl: googleMapsUrl || undefined,
+    thumbnailUrl: thumbnailUrl || undefined,
+    hoursSummary: hoursSummary || undefined,
+    priceLevel: priceLevel || undefined,
     accent: getCategoryAccent(category),
   };
 }

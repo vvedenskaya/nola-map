@@ -32,13 +32,19 @@ export type Venue = {
   alias?: string[];
   person?: string[];
   category?: string;
+  categories?: string[];
   mapType?: string;
   geoConfidence?: string;
   notes?: string;
   sourceThread?: string[];
+  favorite?: boolean;
+  websiteUrl?: string;
+  googleMapsUrl?: string;
+  thumbnailUrl?: string;
+  hoursSummary?: string;
+  priceLevel?: string;
   permanence?: string;
   serviceType?: "garbage" | "water" | "toilets" | "medic";
-  thumbnailUrl: string;
   accent: string;
 };
 

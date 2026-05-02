@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "backfill:thumbnails": "node scripts/backfill-google-thumbnails.mjs",
     "lint": "eslint"
   },
   "dependencies": {
