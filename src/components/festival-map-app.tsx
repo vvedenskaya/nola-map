@@ -879,6 +879,7 @@ type FestivalMapAppProps = {
 };
 
 export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: FestivalMapAppProps) {
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
   const [selectedVenueId, setSelectedVenueId] = useState<string | null>(null);
   const [lastInteractedVenueId, setLastInteractedVenueId] = useState<string | null>(null);
   const [activeDays, setActiveDays] = useState<FestivalDay[]>(() => getDefaultActiveDays(events));
@@ -1914,6 +1915,21 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+    const savedTheme = window.localStorage.getItem("nola-map-theme");
+    if (savedTheme === "dark" || savedTheme === "light") {
+      setTheme(savedTheme);
+      return;
+    }
+    setTheme("dark");
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.localStorage.setItem("nola-map-theme", theme);
+  }, [theme]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
     const mobileViewport = window.matchMedia("(max-width: 720px)");
     const applyMobileUi = () => {
       const nextIsMobile = mobileViewport.matches;
@@ -2107,7 +2123,7 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
   }, [isTimelineOpen]);
 
   return (
-    <main className="legacy-app">
+    <main className="legacy-app" data-theme={theme}>
       <header className="legacy-banner">
         <div className="legacy-banner-title">
           <h1 className="legacy-banner-heading">New Orleans Trip Planner</h1>
@@ -2192,6 +2208,16 @@ export function FestivalMapApp({ venues, events, dataSourceLabel, debug }: Festi
             </div>
           </details>
         </div>
+        <button
+          type="button"
+          className="legacy-theme-toggle"
+          onClick={() => setTheme((current) => (current === "dark" ? "light" : "dark"))}
+          aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+          aria-pressed={theme === "dark"}
+          title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+        >
+          {theme === "dark" ? "Light mode" : "Dark mode"}
+        </button>
       </header>
 
       <div className="legacy-shell">
