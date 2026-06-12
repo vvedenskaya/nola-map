@@ -2552,6 +2552,9 @@ a {
   .legacy-banner {
     min-height: 74px;
     padding: 7px 10px 8px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
   }
 
   .legacy-banner-title {
@@ -2563,8 +2566,8 @@ a {
   }
 
   .legacy-theme-toggle {
-    top: 8px;
-    right: 10px;
+    position: static;
+    align-self: flex-end;
     font-size: 0.84rem;
     padding: 7px 12px;
   }
@@ -2746,7 +2749,7 @@ a {
 
   .legacy-mobile-view-bar {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 8px;
     position: fixed;
     left: 12px;
@@ -2762,10 +2765,11 @@ a {
   }
 
   .legacy-mobile-view-bar .legacy-chip {
-    min-height: 40px;
-    padding: 8px 10px;
-    font-size: 0.88rem;
+    min-height: 38px;
+    padding: 8px 8px;
+    font-size: 0.82rem;
     font-weight: 800;
+    white-space: nowrap;
   }
 
   .legacy-list-title h2 {
